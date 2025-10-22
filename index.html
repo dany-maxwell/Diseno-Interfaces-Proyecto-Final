@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazzyCatt</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>LazzyCatt</h1>
+        </div>
+        <input type="checkbox" id="menu-toogle">
+        <label for="menu-toogle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="pages">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NOVEDADES</a></li>
+                <li><a href="#">COMUNIDAD</a></li>
+                <li><a href="#">CARRITO</a></li>
+            </ul>
+        </nav>
+        <div class="buscar">
+            <form action="" method="get">
+                <input type="text" name="query" placeholder="Buscar">
+            </form>
+        </div>
+        <div class="buttons">
+            <button class="bt-download"><i class="fa-solid fa-circle-down"></i></button>
+            <input type="checkbox" id="user-toogle">
+            <label for="user-toogle" class="user-icon">
+                <i class="fa-solid fa-circle-user"></i>
+            </label>
+            <nav class="user-options">
+                <ul>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Amigos</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Configuraciones</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li class="logout"><a href="#">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <main>
+            <div class="ofertas">
+                <h2>Ofertas y Destacados</h2>
+                <div class="ofertas-box">
+                    <div class="carrusel">
+                        <input type="radio" name="slide" id="slide1" checked>
+                        <input type="radio" name="slide" id="slide2">
+                        <input type="radio" name="slide" id="slide3">
+
+                        <div class="slides">
+                            <div class="oferta">
+                                <img src="images/battelfield 6.jpg" alt="battelfield6">
+                                <div class="oferta-text">
+                                    <h2>Battelfield6</h2>
+                                    <p>La experiencia definitiva de guerra total. En una guerra de tanques, aviones
+                                        de
+                                        combate y
+                                        arsenales de combate masivos, tu escuadrón es el arma más letal.</p>
+                                    <button class="bt-precio">-20% <strong>$56</strong> $69.99</button>
+                                </div>
+                            </div>
+                            <div class="oferta">
+                                <img src="images/darksouls3.jpg" alt="darksouls3">
+                                <div class="oferta-text">
+                                    <h2>Dark Souls III</h2>
+                                    <p>La experiencia definitiva de guerra total. En una guerra de tanques, aviones
+                                        de
+                                        combate y
+                                        arsenales de combate masivos, tu escuadrón es el arma más letal.</p>
+                                    <button class="bt-precio">-40% $59.99 $35</button>
+                                </div>
+                            </div>
+                            <div class="oferta">
+                                <img src="images/sekiro.jpg" alt="sekiro">
+                                <div class="oferta-text">
+                                    <h2>Sekiro</h2>
+                                    <p>La experiencia definitiva de guerra total. En una guerra de tanques, aviones
+                                        de
+                                        combate y
+                                        arsenales de combate masivos, tu escuadrón es el arma más letal.</p>
+                                    <button class="bt-precio">-50% $59.99 $29</button>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="slide3" class="bt-oferta-prev b1">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </label>
+                        <label for="slide1" class="bt-oferta-prev b2">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </label>
+                        <label for="slide2" class="bt-oferta-prev b3">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </label>
+
+                        <label for="slide2" class="bt-oferta-next b1">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </label>
+                        <label for="slide3" class="bt-oferta-next b2">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </label>
+                        <label for="slide1" class="bt-oferta-next b3">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="controles">
+                    <label for="slide1" class="puntos"></label>
+                    <label for="slide2" class="puntos"></label>
+                    <label for="slide3" class="puntos"></label>
+                </div>
+            </div>
+        </main>
+</body>
+
+</html>
