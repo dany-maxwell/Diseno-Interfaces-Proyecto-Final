@@ -1,14 +1,14 @@
 /*Configuracion general*/
 body {
-  background-color: #191919;
-  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  background-color: #0A151F;
+  font-family: Arial, Helvetica, sans-serif;
   color: #FDF9F7;
   margin: 0;
 }
 
 /*Configuracion Header*/
 header {
-  background-color: #2d4263;
+  background-color: #223E5C;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,16 +17,23 @@ header {
   z-index: 100;
 }
 
-#menu-toogle {
+/*Configuracion menu oculto para responsividad*/
+#menu-toggle {
   display: none;
 }
 
 .menu-icon {
   display: none;
+  cursor: pointer;
 }
 
+/*Configuracion pagians de inicio*/
 .pages {
   text-align: left;
+}
+
+.logo {
+  text-align: center;
 }
 
 .pages ul {
@@ -42,6 +49,13 @@ header {
   color: #FDF9F7;
 }
 
+.ahora {
+  font-weight: bold;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+}
+
+/*Configuracion Header barra de busqueda*/
 .buscar form input {
   border: none;
   background-color: #FDF9F7;
@@ -51,11 +65,13 @@ header {
   padding: 0 20px;
 }
 
+/*Configuracion Header botones descarga y usuario*/
 .buttons {
   display: flex;
   gap: 20px;
 }
 
+/*Configuracion Header usuario*/
 #user-toogle {
   display: none;
 }
@@ -65,59 +81,100 @@ header {
   cursor: pointer;
 }
 
-.user-options ul {
-  visibility: hidden;
+.buttons-us {
+  position: relative;
+  display: inline-block;
+}
+
+.user-options {
+  display: none;
   position: absolute;
-  top: 65px;
+  top: 130%;
   right: 0;
-  width: 100%;
-  background-color: #2d4263;
-  flex-direction: column;
-  text-align: center;
-  overflow: hidden;
-  max-height: 0;
-  max-width: 150px;
-  transition: max-height 0.3s ease;
+  width: 150px;
+  background-color: #1F2228;
   z-index: 10;
+}
+
+.user-options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-options li {
   padding: 10px;
 }
 
-.user-options ul li {
-  margin: 5px 0;
-  background-color: #546DA6;
-  padding: 10px 0;
-  list-style: none;
-  border-radius: 10px;
+.user-options li:hover {
+  background-color: #FDF9F7;
+  color: #1F2228;
+}
+
+.user-options a {
+  text-decoration: none;
+  color: #FDF9F7;
 }
 
 .user-options ul .logout {
   background-color: #c84b31;
 }
 
-.user-options ul li a {
-  text-decoration: none;
-  color: #FDF9F7;
-}
-
-.user-options .logout {
+.user-options ul .logout:hover {
+  background-color: #FDF9F7;
   color: #c84b31;
 }
 
-#user-toogle:checked+.user-icon+.user-options ul {
-  visibility: visible;
-  max-height: 400px;
-  max-width: 150px;
+.user-options .logout {
+  color: white;
 }
 
+#user-toogle:checked+.user-icon+.user-options {
+  display: block;
+  max-height: none;
+  max-width: none;
+}
+
+/*Configuracion Header boton descargar*/
 .bt-download {
   border: none;
-  background-color: #2d4263;
+  background-color: #223E5C;
 }
 
 .bt-download i {
   color: #FDF9F7;
   font-size: 28px;
   cursor: pointer;
+}
+
+/*Configuracion Header Responsividad*/
+
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+  }
+
+  .pages ul {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: #223E5C;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    z-index: 10;
+  }
+
+  .buscar {
+    display: none;
+  }
+
+  #menu-toggle:checked+.menu-icon+.logo+.pages ul {
+    visibility: visible;
+  }
 }
 
 /*Configuracion Main*/
@@ -129,7 +186,7 @@ main {
 /*Configuracion Main Ofertas*/
 .ofertas-box {
   margin: 0 auto;
-  background-color: #3B3B3B;
+  background-color: #3D4450;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -144,7 +201,6 @@ main {
   overflow: hidden;
   width: 100%;
   max-width: 1100px;
-  margin: auto;
 }
 
 .oferta {
@@ -224,8 +280,7 @@ input[type="radio"] {
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
-  background: #546DA6;
-  padding: 60px 10px;
+  padding: 90px 10px;
   border-radius: 20px;
   cursor: pointer;
   z-index: 10;
@@ -256,7 +311,7 @@ input[type="radio"] {
 
 /*Configuracion Main Para Ti*/
 .para-ti-box {
-  background-color: #3B3B3B;
+  background-color: #3D4450;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -278,6 +333,7 @@ input[type="radio"] {
   width: 300px;
   height: 150px;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .pt-juego-text {
@@ -321,7 +377,7 @@ input[type="radio"] {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.8rem;
-  background: #546DA6;
+
   padding: 60px 10px;
   border-radius: 20px;
   cursor: pointer;
@@ -352,23 +408,79 @@ input[type="radio"] {
 }
 
 /*Configuracion Main Descubrir*/
-.ds-textbox{
+.ds-textbox {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.ds-box{
+.ds-box {
+  display: flex;
+  flex-direction: column;
   padding: 0px 0;
+  gap: 15px;
 }
 
-.ds-1, .ds-2{
+.ds-1,
+.ds-2 {
   display: flex;
   justify-content: space-between;
-  padding: 5px 30px;
+  padding: 0 30px;
 }
 
-.ds-box img{
+.ds-box img {
   width: 230px;
   height: 120px;
+  object-fit: cover;
+}
+
+/*Configuracion Main Categorias*/
+.ct-l-box {
+  display: flex;
+  list-style: none;
+  background-color: #3D4450;
+  font-size: 20px;
+  padding: 15px 25px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.ct-l-main {
+  display: flex;
+  gap: 20px;
+}
+
+.ct-elegida {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: bold;
+  color: #88ACD3;
+}
+
+.categorias-content {
+  background-color: #3D4450;
+  display: flex;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.categorias-content p {
+  margin: 0;
+}
+
+.categorias-content img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #c84b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }

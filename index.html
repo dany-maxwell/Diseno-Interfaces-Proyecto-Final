@@ -10,17 +10,18 @@
 </head>
 
 <body>
+    <!--Cabecera-->
     <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <div class="logo">
             <h1>LazzyCatt</h1>
         </div>
-        <input type="checkbox" id="menu-toogle">
-        <label for="menu-toogle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
         <nav class="pages">
             <ul>
-                <li><a href="#">INICIO</a></li>
+                <li class="ahora"><a href="#">INICIO</a></li>
                 <li><a href="#">NOVEDADES</a></li>
                 <li><a href="#">COMUNIDAD</a></li>
                 <li><a href="#">CARRITO</a></li>
@@ -32,25 +33,30 @@
             </form>
         </div>
         <div class="buttons">
-            <button class="bt-download"><i class="fa-solid fa-circle-down"></i></button>
-            <input type="checkbox" id="user-toogle">
-            <label for="user-toogle" class="user-icon">
-                <i class="fa-solid fa-circle-user"></i>
-            </label>
-            <nav class="user-options">
-                <ul>
-                    <li><a href="#">Biblioteca</a></li>
-                    <li><a href="#">Amigos</a></li>
-                    <li><a href="#">Perfil</a></li>
-                    <li><a href="#">Configuraciones</a></li>
-                    <li><a href="#">Soporte</a></li>
-                    <li class="logout"><a href="#">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></i></a></li>
-                </ul>
-            </nav>
+            <div class="buttons-dw">
+                <button class="bt-download"><i class="fa-solid fa-circle-down"></i></button>
+            </div>
+            <div class="buttons-us">
+                <input type="checkbox" id="user-toogle">
+                <label for="user-toogle" class="user-icon">
+                    <i class="fa-solid fa-circle-user"></i>
+                </label>
+                <nav class="user-options">
+                    <ul>
+                        <a href="#"><li>Biblioteca</li></a>
+                        <a href="#"><li>Amigos</li></a>
+                        <a href="#"><li>Perfil</li></a>
+                        <a href="#"><li>Configuraciones</li></a>
+                        <a href="#"><li>Soporte</li></a>
+                        <a href="#"><li class="logout">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></li></i></a>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <div class="ofertas">
+        <!--Ofertas-->
+        <section class="ofertas">
             <h2>Ofertas y Destacados</h2>
             <div class="ofertas-box">
                 <div class="carrusel">
@@ -117,8 +123,9 @@
                 <label for="of-slide2" class="puntos"></label>
                 <label for="of-slide3" class="puntos"></label>
             </div>
-        </div>
-        <div class="para-ti">
+        </section>
+        <!--Para ti-->
+        <section class="para-ti">
             <h2>Para ti</h2>
             <div class="para-ti-box">
                 <div class="carrusel">
@@ -217,11 +224,12 @@
                 </div>
 
             </div>
-        </div>
-        <div class="descubrir">
+        </section>
+        <!--Descubrir Experiencias-->
+        <section class="descubrir">
             <div class="ds-textbox">
                 <h2>Descubre Experiencias</h2>
-                <p class="mas">ver mas <i class="fa-solid fa-chevron-down"></i></p>
+                <p class="mas">ver mas <i class="fa-solid fa-chevron-right"></i></p>
             </div>
             <div class="ds-box">
                 <div class="ds-1">
@@ -264,8 +272,52 @@
                 </div>
                 -->
             </div>
-        </div>
+        </section>
+        <!--Ofertas-->
+        <section class="categorias">
+            <h2>Categorias</h2>
+            <div class="categorias-list">
+                <nav class="ct-l-box">
+                    <div class="ct-l-main">
+                        <li class="ct-elegida">Accion</li>
+                        <li>Aventura</li>
+                        <li>Shooter</li>
+                        <li>SoulsLike</li>
+                        <li>Metroidvania</li>
+                        <li>RPG</li>
+                    </div>
+                    <div class="ct-l-mas">
+                        <li>Mas <i class="fa-solid fa-chevron-right"></i></li>
+                    </div>
+                </nav>
+            </div>
+            <div class="categorias-content">
+                <div class="ct-game">
+                    <img src="images/battelfield-6.jpg" alt="">
+                    <p>Battelfield 6</p>
+                </div>
+                <div class="ct-game">
+                    <img src="images/Devil_May_Cry_5.jpg" alt="">
+                    <p>Devil May Cry 5</p>
+                </div>
+                <div class="ct-game">
+                    <img src="images/Uncharted-4.jpg" alt="">
+                    <p>Uncharted 5</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="ft-redes">
+            <h4>Redes</h4>
+        </div>
+        <div class="ft-descargar">
+            <h4>Descargar</h4>
+        </div>
+        <div class="ft-contactos">
+            <h4>Contactos</h4>
+        </div>
+    </footer>
 </body>
 
 </html>
