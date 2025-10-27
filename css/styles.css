@@ -8,12 +8,12 @@ body {
 
 /*Configuracion Header*/
 header {
+  position: sticky;
   background-color: #223E5C;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 0px 80px;
   z-index: 100;
 }
 
@@ -28,20 +28,14 @@ header {
 }
 
 /*Configuracion pagians de inicio*/
-.pages {
-  text-align: left;
-}
-
-.logo {
-  text-align: center;
-}
 
 .pages ul {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 25px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .pages a {
@@ -51,8 +45,11 @@ header {
 
 .ahora {
   font-weight: bold;
-  text-underline-offset: 4px;
   text-decoration: underline;
+  text-underline-offset: 4px;
+  padding: 30px 10px;
+  background: linear-gradient(#223E5C,#223E5C,#386799)
+  
 }
 
 /*Configuracion Header barra de busqueda*/
@@ -67,6 +64,7 @@ header {
 
 /*Configuracion Header botones descarga y usuario*/
 .buttons {
+  align-items: center;
   display: flex;
   gap: 20px;
 }
@@ -81,7 +79,7 @@ header {
   cursor: pointer;
 }
 
-.buttons-us {
+.button-us {
   position: relative;
   display: inline-block;
 }
@@ -137,13 +135,13 @@ header {
 
 /*Configuracion Header boton descargar*/
 .bt-download {
+  font-size: 28px;
   border: none;
   background-color: #223E5C;
 }
 
 .bt-download i {
   color: #FDF9F7;
-  font-size: 28px;
   cursor: pointer;
 }
 
