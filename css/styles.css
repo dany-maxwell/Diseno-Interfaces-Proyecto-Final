@@ -476,9 +476,23 @@ input[type="radio"] {
 }
 
 footer {
-  background-color: #c84b31;
+  background-color: #223E5C;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+}
+.ft-up{
+  display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
+}
+.ft-up a{
+  text-decoration: none;
+  color: #FDF9F7;
+}
+
+.ft-bot{
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #FDF9F7;
 }
