@@ -8,20 +8,17 @@ body {
 
 /*Configuracion Header*/
 header {
-  position: sticky;
-  background-color: #223E5C;
+  background-color: #17448C;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 40px;
-  z-index: 100;
 }
 
 /*Configuracion menu oculto para responsividad*/
 #menu-toggle {
   display: none;
 }
-
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -31,34 +28,26 @@ header {
 
 .pages ul {
   display: flex;
-  align-items: center;
   list-style: none;
-  gap: 25px;
-  padding: 0;
-  margin: 0;
+  gap: 15px;
 }
-
 .pages a {
   text-decoration: none;
   color: #FDF9F7;
 }
-
 .ahora {
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 4px;
-  padding: 30px 10px;
-  background: linear-gradient(#223E5C,#223E5C,#386799)
-  
 }
 
 /*Configuracion Header barra de busqueda*/
 .buscar form input {
   border: none;
   background-color: #FDF9F7;
-  width: 400px;
+  width: 300px;
   height: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0 20px;
 }
 
@@ -123,24 +112,15 @@ header {
   color: #c84b31;
 }
 
-.user-options .logout {
-  color: white;
-}
-
 #user-toogle:checked+.user-icon+.user-options {
   display: block;
-  max-height: none;
-  max-width: none;
 }
 
 /*Configuracion Header boton descargar*/
 .bt-download {
   font-size: 28px;
   border: none;
-  background-color: #223E5C;
-}
-
-.bt-download i {
+  background-color: #17448C;
   color: #FDF9F7;
   cursor: pointer;
 }
@@ -157,7 +137,7 @@ header {
     position: absolute;
     left: 0;
     top: 80px;
-    background-color: #223E5C;
+    background-color: #17448C;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -177,28 +157,17 @@ header {
 
 /*Configuracion Main*/
 main {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 /*Configuracion Main Ofertas*/
-.ofertas-box {
-  margin: 0 auto;
-  background-color: #3D4450;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  justify-content: center;
-  z-index: 9;
-}
 
 .carrusel {
+  background-color: #3D4450;
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 1100px;
 }
 
 .oferta {
@@ -210,9 +179,6 @@ main {
 
 .oferta-text {
   margin: 0 30px;
-}
-
-.oferta-text p {
   text-align: justify;
 }
 
@@ -222,7 +188,7 @@ main {
   color: #FDF9F7;
   padding: 15px;
   font-size: 20px;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -270,26 +236,31 @@ input[type="radio"] {
   cursor: pointer;
   transition: background 0.3s;
 }
+.puntos:hover{
+  background-color:#17448C;
+}
 
 .bt-oferta-prev,
 .bt-oferta-next {
   display: none;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  height: 100%;
+  padding: 15% 15px;
   font-size: 30px;
-  padding: 90px 10px;
-  border-radius: 20px;
   cursor: pointer;
-  z-index: 10;
+  transition: background 0.3s;
 }
 
-.bt-oferta-prev {
-  left: 10px;
+.bt-oferta-prev:hover,
+.bt-oferta-next:hover {
+  background-color: #17448cb2 ;
 }
+
+
 
 .bt-oferta-next {
-  right: 10px;
+  right: 0px;
 }
 
 #of-slide1:checked~.bt-oferta-prev.b1,
@@ -308,11 +279,6 @@ input[type="radio"] {
 }
 
 /*Configuracion Main Para Ti*/
-.para-ti-box {
-  background-color: #3D4450;
-  overflow: hidden;
-  border-radius: 5px;
-}
 
 .pt-slides {
   display: flex;
@@ -372,22 +338,21 @@ input[type="radio"] {
 .bt-parati-next {
   display: none;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.8rem;
-
-  padding: 60px 10px;
-  border-radius: 20px;
+  top: 0;
+  height: 100%;
+  font-size: 30px;
+  padding: 8% 15px;
   cursor: pointer;
   z-index: 10;
+  transition: background 0.3s;
 }
-
-.bt-parati-prev {
-  left: 10px;
-}
+.bt-parati-prev:hover,
+.bt-parati-next:hover {
+  background-color: #17448cb2;
+} 
 
 .bt-parati-next {
-  right: 10px;
+  right: 0px;
 }
 
 #pt-slide1:checked~.bt-parati-prev.b1,
@@ -409,7 +374,7 @@ input[type="radio"] {
 .ds-textbox {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .ds-box {
@@ -452,7 +417,7 @@ input[type="radio"] {
   text-decoration: underline;
   text-underline-offset: 4px;
   font-weight: bold;
-  color: #88ACD3;
+  color: #678CDA;
 }
 
 .categorias-content {
@@ -476,7 +441,7 @@ input[type="radio"] {
 }
 
 footer {
-  background-color: #223E5C;
+  background-color: #17448C;
   display: flex;
   flex-direction: column;
   padding: 0 40px;
