@@ -17,41 +17,43 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <div class="logo">
-            <a href="/index.html" class="logo_pag"><h1>LazzyCatt</h1></a>
+            <a href="/tienda/" class="logo_pag"><h1>LazzyCatt</h1></a>
         </div>
     </header>
     <main>
         <!--Formulario de inicio de sesion-->
-        <h1>Datos de Cuenta</h1>
-        <div class="login-formulario">
+        <h1>Registrar Usuario</h1>
+        <form class="login-formulario" action="/tienda/">
+            <p><strong>Credenciales</strong></p>
+            <input type="email" name="correo" placeholder="Correo" class="texto_" required> 
+            <input type="text" placeholder="Usuario" class="texto_" required>
+            <input type="password" placeholder="Contraseña" class="texto_" required>
+            <p><strong>Nombre</strong></p>
             <input type="text" placeholder="Nombres" class="texto_" required>
             <input type="text" placeholder="Apellidos" class="texto_" required>
-            <label for="genero"><strong>Elige tu genero:</strong></label>
+            <p><strong>Genero</strong></p>
             <select id="genero" name="genero" class="texto_" required>
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
                 <option value="otro">Otro</option>
             </select>
+            <p><strong>Fecha de Nacimiento</strong></p>
+            <input type="date" name="fecha_nac" class="texto_" id="fecha_nac" required>
+            <p><strong>Ubicación</strong></p>
             <input type="text" placeholder="Pais" class="texto_" required>
             <input type="text" placeholder="Ciudad" class="texto_" required>
-            <label for="fecha_nac"><strong>Fecha de Nacimiento</strong></label>
-            <input type="date" name="fecha_nac" class="texto_" required>
-            <input type="email" name="correo" placeholder="Correo" class="texto_" required> 
-            <input type="text" placeholder="Usuario" class="texto_" required>
-            <input type="password" placeholder="Contraseña" class="texto_" required>
             <div class="termino_">
+                <input type="checkbox" name="termino" id="termino" required>
                 <label for="termino">Terminos y condiciones</label>
-                <input type="checkbox" name="termino" >
             </div>
-            <a href="/index.html"><input type="submit" value="Ingresar" class="boton_f"></a>
-      
-        </div>
+            <input type="submit" value="Ingresar" class="boton_f">
+        </form>
     </main>
     <footer>
         <div class="ft-up">
-            <a href=""><p>Acerca de LazzyCattGames</p></a>
-            <a href=""><p>Soporte</p></a>
-            <a href=""><p>Políticas</p></a>
+            <a href="/acercaDeNosotros/"><p>Acerca de LazzyCattGames</p></a>
+            <a href="/soporte/"><p>Soporte</p></a>
+            <a href="/politicas/"><p>Políticas</p></a>
             <a href=""><p><i class="fa-brands fa-x-twitter"></i></p></a>
             <a href=""><p><i class="fa-brands fa-facebook-f"></i></p></a>
             <a href=""><p><i class="fa-brands fa-instagram"></i></p></a>
