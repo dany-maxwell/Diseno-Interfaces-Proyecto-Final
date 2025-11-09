@@ -1,5 +1,8 @@
 /*Configuracion general*/
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #0A151F;
   font-family: Arial, Helvetica, sans-serif;
   color: #FDF9F7;
@@ -164,6 +167,7 @@ header {
 main {
   max-width: 1100px;
   margin: 0 auto;
+  flex: 1;
 }
 
 /*Configuracion Main Ofertas*/
@@ -504,11 +508,14 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  .pt-slides{  
+    padding: 10px 11%;
+    gap: 25%;
+  }
   .pt-1,.pt-2,.pt-3{
-    padding: 12px;
-    margin: 10px 30px;
-    gap: 15px;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
   }
   .oferta {
     overflow: hidden;
@@ -597,3 +604,4 @@ footer {
     object-fit: cover;
   }
 }
+
