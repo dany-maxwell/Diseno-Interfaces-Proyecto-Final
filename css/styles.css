@@ -144,6 +144,9 @@ header {
     flex-direction: column;
     background-color: #17448C;
     text-align: left;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
     visibility: hidden;
     padding: 20px;
   }
@@ -468,7 +471,6 @@ footer {
   justify-content: center;
   border-top: 1px solid #FDF9F7;
 }
-
 /*Configuraciones adicionales para responsividad*/
 
 /* Escritorio: mantener orden horizontal */
@@ -502,6 +504,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .pt-1,.pt-2,.pt-3{
     padding: 12px;
     margin: 10px 30px;
