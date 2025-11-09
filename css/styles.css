@@ -141,7 +141,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 90%;
     visibility: hidden;
     z-index: 10;
   }
@@ -461,3 +461,48 @@ footer {
   justify-content: center;
   border-top: 1px solid #FDF9F7;
 }
+/*Configuraciones adicionales para responsividad*/
+
+/* Escritorio: mantener orden horizontal */
+
+@media (min-width: 901px) {
+  .oferta,
+  .pt-1,
+  .pt-2,
+  .pt-3,
+  .ds-1,
+  .ds-2,
+  .ct-l-main,
+  .categorias-content,
+  .ft-up {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Móvil: permitir que se acomoden verticalmente */
+
+@media (max-width: 900px) {
+  .oferta,
+  .pt-1,
+  .pt-2,
+  .pt-3,
+  .ds-1,
+  .ds-2,
+  .ct-l-main,
+  .categorias-content,
+  .ft-up {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pt-1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .oferta {
+    overflow: hidden;
+  }
+
+}
+
