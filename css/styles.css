@@ -92,39 +92,34 @@ header a {
   position: absolute;
   top: 130%;
   right: 0;
-  width: 150px;
+  width: 180px;
   background-color: #1F2228;
   z-index: 10;
 }
 
-.user-options ul {
+.user-options ul{
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
-
-.user-options li {
+.user-options li{
   padding: 10px;
 }
+.user-options li.logout{
+  background-color: #f56346;
+}
 
-.user-options li:hover {
+.user-options li:hover{
   background-color: #FDF9F7;
-  color: #1F2228;
+}
+.user-options li:hover a{
+  color: #191919;
+}
+.user-options li.logout:hover a{
+  color: #f56346;
 }
 
-.user-options a {
-  text-decoration: none;
-  color: #FDF9F7;
-}
-
-.user-options ul .logout {
-  background-color: #c84b31;
-}
-
-.user-options ul .logout:hover {
-  background-color: #FDF9F7;
-  color: #c84b31;
-}
 
 #user-toogle:checked+.user-icon+.user-options {
   display: block;
@@ -297,7 +292,9 @@ input[type="radio"] {
 }
 
 /*Configuracion Main Para Ti*/
-
+.para-ti{
+  margin-bottom: 10px;
+}
 .pt-slides {
   display: flex;
   transition: transform 0.5s ease;
@@ -682,6 +679,7 @@ footer {
   border: none;
   margin-bottom: 20px;
   cursor: pointer;
+  max-width: 100px;
 }
 
 label {
@@ -697,9 +695,12 @@ label {
   padding: 5px 10px;
 }
 
-
 #acerca {
   text-align: center;
+}
+
+#soporte a{
+  color: #f56346;
 }
 
 .gato-img {
@@ -804,3 +805,151 @@ label {
 }
 
 /*Carrito*/
+/*configuracion juegos en el carro*/
+.main-kart{
+  display: flex;
+  gap: 30px;
+}
+.kart{
+  width: 100%;
+}
+.kart-game{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3D4450;
+  margin: 20px 0;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+}
+.kart-game p,i {
+  font-size: 20px;
+}
+.kart-game span{
+  background-color: #f56346;
+  border-radius: 4px;
+  padding: 3px;
+  margin-right: 4px;
+}
+.game-k{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.kart img{
+  width: 200px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.bt-remove{
+  border: none;
+  border-radius: 4px;
+  background-color: #995143;
+  color: #FDF9F7;
+  cursor: pointer;
+}
+.go-shop{
+  border: none;
+  padding: 5px 15px;
+  
+  color: #FDF9F7;
+  background-color: #17448C;
+  cursor: pointer;
+}
+.go-pay{
+  border: none;
+  padding: 5px 15px;
+  background-color: #c84b31;
+  color: #FDF9F7;
+  
+  cursor: pointer;
+}
+.go-shop:hover{
+  background-color: #FDF9F7;
+  color: #17448C;
+}
+.go-pay:hover{
+  color: #c84b31;
+  background-color: #FDF9F7;
+}
+/*configuracion factura*/
+.pays{
+  background-color: #3D4450;
+  border-radius: 4px;
+  padding: 10px;
+  padding-top: 0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pays-head h3{
+  border-bottom: 2px solid #FDF9F7;
+}
+
+#tax{
+  text-align: justify;
+}
+.game-p{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c84b31;
+}
+.game-p p{
+  margin: 5px 12px;
+
+}
+.total-p{
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #FDF9F7;
+}
+.go-pay-2{
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  background-color: #c84b31;
+  color: #FDF9F7;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.go-pay-2:hover{
+  background-color: #FDF9F7;
+  color: #f56346;
+}
+
+@media (max-width: 900px){
+  .main-kart{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pays{
+    width: 90%;
+  }
+  .kart-game{
+    flex-direction: column;
+  }
+  .game-k{
+    flex-direction: column;
+  }
+  .game-k p{
+    margin: 0;
+  }
+  .d-game-k{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .precio-k{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .kart img{
+    width: 100%;
+    height: 210px;
+  }
+}

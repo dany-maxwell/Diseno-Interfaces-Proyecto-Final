@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <input type="checkbox" id="menu-toggle">
@@ -14,7 +16,9 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <div class="logo">
-            <a href="/tienda/"><h1>LazzyCatt</h1></a>
+            <a href="/tienda/">
+                <h1>LazzyCatt</h1>
+            </a>
         </div>
         <nav class="pages">
             <ul>
@@ -40,19 +44,186 @@
                 </label>
                 <nav class="user-options">
                     <ul>
-                        <a href="#"><li>Biblioteca</li></a>
-                        <a href="#"><li>Amigos</li></a>
-                        <a href="#"><li>Perfil</li></a>
-                        <a href="#"><li>Configuraciones</li></a>
-                        <a href="#"><li>Soporte</li></a>
-                        <a href="#"><li class="logout">Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></li></i></a>
+                        <li><a href="#">Biblioteca</a></li>
+                        <li><a href="#">Amigos</a></li>
+                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#">Configuraciones</a></li>
+                        <li><a href="/soporte/">Soporte</a></li>
+                        <li class="logout"><a href="/login/">Cerrar Sesion <i
+                                    class="fa-solid fa-right-from-bracket"></i></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main>
+        <section class="compras">
+            <h2>Tu carrito de compras</h2>
+            <div class="main-kart">
+                <div class="kart">
+                    <div class="kart-game">
+                        <div class="game-k">
+                            <img src="/images/juegos/sekiro.jpg" alt="">
+                            <div class="d-game-k">
+                                <p>Sekiro</p>
+                                <i class="fa-brands fa-microsoft"></i>
+                            </div>
+                        </div>
+                        <div class="precio-k">
+                            <div class="precio-j">
+                                <p><span class="discount">-50%</span>$29.99</p>
+                            </div>
+                            <div class="remove">
+                                <button class="bt-remove">Eliminar del carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kart-game">
+                        <div class="game-k">
+                            <img src="/images/juegos/dont-sarve-thogether.jpg" alt="">
+                            <div class="d-game-k">
+                                <p>Don't Starve Thogether</p>
+                                <i class="fa-brands fa-microsoft"></i>
+                            </div>
+                        </div>
+                        <div class="precio-k">
+                            <div class="precio-j">
+                                <p><span class="discount">-20%</span>$15.99</p>
+                            </div>
+                            <div class="remove">
+                                <button class="bt-remove">Eliminar del carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kart-buttons">
+                        <a href="/tienda/"><button class="go-shop">Seguir comprando</button></a>
+                        <button class="go-pay">Avanzar a pagar</button>
+                    </div>
+                </div>
+                <div class="pays">
+                    <div class="pays-head">
+                        <h3>Carrito</h3>
+                        <p id="tax">El impuesto sobre las ventas se calculará durante el proceso de pago cuando
+                            corresponda.</p>
+                        <div class="game-p">
+                            <p>Sekiro</p>
+                            <p>$29.99</p>
+                        </div>
+                        <div class="game-p">
+                            <p>Don't Starve Thogether</p>
+                            <p>$15.99</p>
+                        </div>
+                    </div>
+                    <div class="pays-foot">
+                        <div class="total-p">
+                            <p>Precio Total Aproximado</p>
+                            <p>$45.98</p>
+                        </div>
+                        <button class="go-pay-2">Avanzar a pagar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="para-ti">
+            <h2>Para ti</h2>
+            <div class="para-ti-box">
+                <div class="carrusel">
+                    <input type="radio" name="pt-slide" id="pt-slide1" checked>
+                    <input type="radio" name="pt-slide" id="pt-slide2">
+                    <input type="radio" name="pt-slide" id="pt-slide3">
+                    <div class="pt-slides">
+                        <div class="pt-1">
+                            <div class="juego-parati">
+                                <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p></p>
+                                    <p class="pt-juego-precio">a</p>
+                                </div>
+                            </div>
+                            <div class="juego-parati">
+                                <img src="/images/juegos/black-myth-wukong.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                            <div class="juego-parati">
+                                <img src="/images/juegos/detroit-become-human.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-2">
+                            <div class="juego-parati">
+                                <img src="/images/juegos/dont-sarve-thogether.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                            <div class="juego-parati">
+                                <img src="/images/juegos/jedi-fallen-orer.jpeg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                            <div class="juego-parati">
+                                <img src="/images/juegos/flat-world.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-3">
+                            <div class="juego-parati">
+                                <img src="/images/juegos/resident-evil-7.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                            <div class="juego-parati">
+                                <img src="/images/juegos/Devil_May_Cry_5.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                            <div class="juego-parati">
+                                <img src="/images/juegos/Uncharted-4.jpg" alt="juego1">
+                                <div class="pt-juego-text">
+                                    <p>a</p>
+                                    <p class="pt-juego-precio">precio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="pt-slide3" class="bt-parati-prev b1">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </label>
+                    <label for="pt-slide1" class="bt-parati-prev b2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </label>
+                    <label for="pt-slide2" class="bt-parati-prev b3">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </label>
+                    <label for="pt-slide2" class="bt-parati-next b1">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </label>
+                    <label for="pt-slide3" class="bt-parati-next b2">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </label>
+                    <label for="pt-slide1" class="bt-parati-next b3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </label>
+                </div>
 
+            </div>
+        </section>
     </main>
     <footer>
         <div class="ft-up">
@@ -80,4 +251,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -17,23 +17,16 @@
         </div>
     </header>
     <main>
-        <!--Inicio de sesion-->
-        <h1>Iniciar Sesión</h1>
-        <form class="login-formulario" action="/tienda/">
-            <input type="text" placeholder="Usuario o Correo" class="texto_" required>
-            <input type="password" placeholder="Contraseña" class="texto_"required>
-            <div class="termino_">
-                <input type="checkbox" name="termino" id="termino">
-                <label for="termino">Recordar Usuario</label>
-            </div>
-            <input type="submit" value="Ingresar" class="boton_f">
+        <h1>Recuperacion de Contraseña</h1>
+        <form class="login-formulario" action="/login/">
+            <p>Escribe el correo electronico con el que eses registrado. Posteriormente llegara a tu correo un link derecuperacion de contraseña</p>
+            <input type="text" placeholder="Correo registrado" class="texto_" required> 
+            <input type="submit" value="Enviar" class="boton_f">
         </form>
         <div class="links-login">
-            <p>¿Olvidaste tu contraseña? <a href="/recuperar/">Recupérala</a></p>
             <p>¿Aún no te has registrado? <a href="/registro/">Regístrate aquí</a></p>
         </div>
     </main>
-    <!--Pie de pagina-->
     <footer>
         <div class="ft-up">
             <a href="/acercaDeNosotros/"><p>Acerca de LazzyCattGames</p></a>
@@ -48,5 +41,4 @@
         </div>
     </footer>
 </body>
-
 </html>
