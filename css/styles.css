@@ -189,6 +189,8 @@ main {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  color: #FDF9F7;
+  text-decoration: none;
 }
 
 .oferta-text {
@@ -328,6 +330,7 @@ input[type="radio"] {
   border-radius: 5px;
   overflow: hidden;
   max-width: 175px;
+  white-space: nowrap;
 }
 
 .pt-juego-text p.pt-juego-precio {
