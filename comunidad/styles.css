@@ -1,0 +1,97 @@
+/*Comunidad*/
+.feed{
+  text-align: center;
+}
+.post-something{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  background-color: #040B16;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.post-something i{
+  font-size: 40px;
+}
+.post-something .you-post-something{
+  border: none;
+  height: 35px;
+  border-radius: 15px;
+  padding: 0 30px;
+  width: 60%;
+}
+.post-something i#upload{
+  font-size: 30px;
+}
+.post{
+  background-color: #040B16;
+  border-radius: 5px;
+  margin: 20px;
+}
+.post-head{
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.user-post{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.user-post p{
+  font-size: 25px;
+}
+
+.post-img{
+  background-color: #191919;
+}
+
+.post-img img{
+  width: auto;
+  height: 450px;
+  border-radius: 5px;
+}
+
+.feedback{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.your-feedback{
+  display: flex;
+  gap: 15px;
+  color: #888;
+  font-size: 30px;
+  align-items: center;
+}
+.your-feedback i:hover{
+  color: #c84a3181;
+}
+.your-feedback #unlike{
+  transform: rotate(180deg);
+}
+
+.others-feedback{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.others-feedback p{
+  margin: 0;
+  padding: 10px;
+}
+
+@media (max-width: 900px) {
+  .post-img img{
+    width: 100%;
+    object-fit: contain;
+  }
+}

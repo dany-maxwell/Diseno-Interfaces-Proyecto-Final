@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LazzyCatt</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/main-css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
@@ -61,59 +62,61 @@
         <!--Ofertas-->
         <section class="ofertas">
             <h2>Ofertas y Destacados</h2>
-            <div class="ofertas-box">
-                <div class="carrusel">
-                    <input type="radio" name="of-slide" id="of-slide1" checked>
-                    <input type="radio" name="of-slide" id="of-slide2">
-                    <input type="radio" name="of-slide" id="of-slide3">
-                    <div class="of-slides">      
-                        <div class="oferta">
-                            <img src="/images/juegos/battelfield-6.jpg" alt="battelfield6">
-                            <div class="oferta-text">
-                                <h2>Battelfield6</h2>
-                                <p>La experiencia definitiva de guerra total. En una guerra de tanques, aviones
-                                    de
-                                    combate y
-                                    arsenales de combate masivos, tu escuadrón es el arma más letal.</p>
-                                <button class="bt-precio">-20% <strong>$56</strong> $69.99</button>
-                            </div>
-                        </div>
-                        <div class="oferta">
-                            <img src="/images/juegos/darksouls3.jpg" alt="darksouls3">
-                            <div class="oferta-text">
-                                <h2>Dark Souls III</h2>
-                                <p>Dark Souls sigue superando los límites con el último y ambicioso capítulo de esta aclamada saga que ha definido el género. ¡Prepárate y abraza la oscuridad!</p>
-                                <button class="bt-precio">-40% $59.99 $35</button>
-                            </div>
-                        </div>
-                        <div class="oferta">
-                            <img src="/images/juegos/sekiro.jpg" alt="sekiro">
-                            <div class="oferta-text">
-                                <h2>Sekiro</h2>
-                                <p>Juego del Año - The Game Awards 2019. Mejor Juego de Acción de 2019 - IGN. Forja tu propio camino hacia la venganza en la galardonada aventura de FromSoftware, creadores de Bloodborne y la saga Dark Souls. Venga tu honor. Restaura tu honor. Mata con ingenio.</p>
-                                <button class="bt-precio">-50% $59.99 $29</button>
-                            </div>
+            <div class="carrusel">
+                <input type="radio" name="of-slide" id="of-slide1" checked>
+                <input type="radio" name="of-slide" id="of-slide2">
+                <input type="radio" name="of-slide" id="of-slide3">
+                <div class="of-slides">
+                    <div class="oferta">
+                        <img src="/images/juegos/battelfield-6.jpg" alt="battelfield6">
+                        <div class="oferta-text">
+                            <h2>Battelfield6</h2>
+                            <p>La experiencia definitiva de guerra total. En una guerra de tanques, aviones
+                                de
+                                combate y
+                                arsenales de combate masivos, tu escuadrón es el arma más letal.</p>
+                            <button class="bt-precio">-20% <strong>$56</strong> $69.99</button>
                         </div>
                     </div>
-                    <label for="of-slide3" class="bt-oferta-prev b1">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </label>
-                    <label for="of-slide1" class="bt-oferta-prev b2">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </label>
-                    <label for="of-slide2" class="bt-oferta-prev b3">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </label>
-                    <label for="of-slide2" class="bt-oferta-next b1">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </label>
-                    <label for="of-slide3" class="bt-oferta-next b2">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </label>
-                    <label for="of-slide1" class="bt-oferta-next b3">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </label>
+                    <div class="oferta">
+                        <img src="/images/juegos/darksouls3.jpg" alt="darksouls3">
+                        <div class="oferta-text">
+                            <h2>Dark Souls III</h2>
+                            <p>Dark Souls sigue superando los límites con el último y ambicioso capítulo de esta
+                                aclamada saga que ha definido el género. ¡Prepárate y abraza la oscuridad!</p>
+                            <button class="bt-precio">-40% $59.99 $35</button>
+                        </div>
+                    </div>
+                    <div class="oferta">
+                        <img src="/images/juegos/sekiro.jpg" alt="sekiro">
+                        <div class="oferta-text">
+                            <h2>Sekiro</h2>
+                            <p>Juego del Año - The Game Awards 2019. Mejor Juego de Acción de 2019 - IGN. Forja tu
+                                propio camino hacia la venganza en la galardonada aventura de FromSoftware, creadores de
+                                Bloodborne y la saga Dark Souls. Venga tu honor. Restaura tu honor. Mata con ingenio.
+                            </p>
+                            <button class="bt-precio">-50% $59.99 $29</button>
+                        </div>
+                    </div>
                 </div>
+                <label for="of-slide3" class="bt-oferta-prev b1">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </label>
+                <label for="of-slide1" class="bt-oferta-prev b2">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </label>
+                <label for="of-slide2" class="bt-oferta-prev b3">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </label>
+                <label for="of-slide2" class="bt-oferta-next b1">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </label>
+                <label for="of-slide3" class="bt-oferta-next b2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </label>
+                <label for="of-slide1" class="bt-oferta-next b3">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </label>
             </div>
             <div class="controles">
                 <label for="of-slide1" class="puntos"></label>

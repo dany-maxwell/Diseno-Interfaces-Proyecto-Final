@@ -1,0 +1,289 @@
+/*Configuracion Main Ofertas*/
+
+.carrusel {
+  background-color: #040B16;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.oferta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: #FDF9F7;
+  text-decoration: none;
+}
+
+.oferta-text {
+  margin: 0 30px;
+  text-align: justify;
+}
+
+.bt-precio {
+  border: none;
+  background-color: #c84b31;
+  color: #FDF9F7;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.oferta img {
+  width: 670px;
+  height: 380px;
+  object-fit: cover;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.of-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 0 60px;
+  gap: 120px;
+}
+
+#of-slide1:checked~.of-slides {
+  transform: translateX(0%);
+}
+
+#of-slide2:checked~.of-slides {
+  transform: translateX(-100%);
+}
+
+#of-slide3:checked~.of-slides {
+  transform: translateX(-200%);
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.puntos {
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #888;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.puntos:hover {
+  background-color: #17448C;
+}
+
+.bt-oferta-prev,
+.bt-oferta-next {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 15% 15px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bt-oferta-prev:hover,
+.bt-oferta-next:hover {
+  background-color: #17448cb2;
+}
+
+.bt-oferta-next {
+  right: 0px;
+}
+
+#of-slide1:checked~.bt-oferta-prev.b1,
+#of-slide1:checked~.bt-oferta-next.b1 {
+  display: block;
+}
+
+#of-slide2:checked~.bt-oferta-prev.b2,
+#of-slide2:checked~.bt-oferta-next.b2 {
+  display: block;
+}
+
+#of-slide3:checked~.bt-oferta-prev.b3,
+#of-slide3:checked~.bt-oferta-next.b3 {
+  display: block;
+}
+
+/*Configuracion Main Para Ti*/
+.para-ti{
+  margin-bottom: 10px;
+}
+.pt-slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.pt-1,
+.pt-2,
+.pt-3 {
+  display: flex;
+  margin: 15px 60px;
+  gap: 40px;
+}
+
+.pt-slides img {
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.pt-juego-text {
+  display: flex;
+  justify-content: space-between;
+  background-color: #191919;
+  border-radius: 5px;
+}
+
+.pt-juego-text p {
+  margin: 0;
+  padding: 5px 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 175px;
+  white-space: nowrap;
+}
+
+.pt-juego-text p.pt-juego-precio {
+  background-color: #c84b31;
+  min-width: 50px;
+  max-width: 80px;
+  text-align: center;
+}
+
+#pt-slide1:checked~.pt-slides {
+  transform: translateX(0%);
+}
+
+#pt-slide2:checked~.pt-slides {
+  transform: translateX(-100%);
+}
+
+#pt-slide3:checked~.pt-slides {
+  transform: translateX(-200%);
+}
+
+.bt-parati-prev,
+.bt-parati-next {
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-size: 30px;
+  padding: 8% 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.bt-parati-prev:hover,
+.bt-parati-next:hover {
+  background-color: #17448cb2;
+}
+
+.bt-parati-next {
+  right: 0px;
+}
+
+#pt-slide1:checked~.bt-parati-prev.b1,
+#pt-slide1:checked~.bt-parati-next.b1 {
+  display: block;
+}
+
+#pt-slide2:checked~.bt-parati-prev.b2,
+#pt-slide2:checked~.bt-parati-next.b2 {
+  display: block;
+}
+
+#pt-slide3:checked~.bt-parati-prev.b3,
+#pt-slide3:checked~.bt-parati-next.b3 {
+  display: block;
+}
+
+/*Configuracion Main Descubrir*/
+.ds-textbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+}
+
+.ds-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.ds-1,
+.ds-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.ds-box img {
+  width: 230px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/*Configuracion Main Categorias*/
+.ct-l-box {
+  display: flex;
+  list-style: none;
+  background-color: #040B16;
+  font-size: 20px;
+  padding: 15px 25px;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ct-l-main {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.ct-elegida {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: bold;
+  color: #678CDA;
+}
+
+.categorias-content {
+  background-color: #040B16;
+  display: flex;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.categorias-content p {
+  margin: 0;
+}
+
+.categorias-content img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}

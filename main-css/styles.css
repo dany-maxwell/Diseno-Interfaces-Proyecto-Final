@@ -1,0 +1,340 @@
+/*Configuracion general*/
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #0D1B3A;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FDF9F7;
+  margin: 0;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/*Configuracion Header*/
+header {
+  background-color: #1E3F85;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  z-index: 100;
+}
+
+header a {
+  text-decoration: none;
+  color: #FDF9F7;
+}
+
+/*Configuracion menu oculto para responsividad*/
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/*Configuracion pagians de inicio*/
+
+.pages ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.pages li{
+  padding: 6px;
+  transition: background 0.3s ease;
+}
+.pages li:hover {
+  background-color: #2750AA;
+  border-radius: 3px;
+}
+.ahora {
+  background-color: #2750AA;
+  border-radius: 3px;
+}
+.pages .ahora:hover{
+  background-color: #3760b9;
+}
+
+/*Configuracion Header barra de busqueda*/
+.buscar form input {
+  border: none;
+  background-color: #FDF9F7;
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+
+/*Configuracion Header botones descarga y usuario*/
+.buttons {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+/*Configuracion Header usuario*/
+#user-toogle {
+  display: none;
+}
+
+.user-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.button-us {
+  position: relative;
+  display: inline-block;
+}
+.user-options {
+  visibility: hidden;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  width: 180px;
+  height: 0;
+  background-color: #1F2228;
+  z-index: 10;
+  overflow: hidden;
+}
+.user-options ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.user-options li{
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+.user-options li.logout{
+  background-color: #f56346;
+}
+
+.user-options li:hover{
+  background-color: #FDF9F7;
+}
+.user-options li:hover a{
+  color: #191919;
+}
+.user-options li.logout:hover a{
+  color: #f56346;
+}
+
+#user-toogle:checked+.user-icon+.user-options {
+  visibility: visible;
+  height: auto;
+  transition: height 0.3s ease;
+}
+
+/*Configuracion Header boton descargar*/
+.bt-download {
+  font-size: 28px;
+  border: none;
+  background-color: #1E3F85;
+  color: #FDF9F7;
+  cursor: pointer;
+}
+
+/*Configuracion Header Responsividad*/
+
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+  }
+  @keyframes left-right{
+    from{
+      left: -100%;
+    }
+    to{
+      left: 0;
+    }
+  }
+  .pages ul {
+    position: fixed;
+    left: 0;
+    top: 64px;
+    flex-direction: column;
+    background-color: #1E3F85;
+    text-align: left;
+    justify-content: top;
+    width: auto;
+    visibility: hidden;
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .buscar {
+    display: none;
+  }
+
+  #menu-toggle:checked+.menu-icon+.logo+.pages ul {
+    visibility: visible;
+    animation: left-right 0.4s;
+  }
+}
+
+/*Configuraciones adicionales para responsividad*/
+
+/* Escritorio: mantener orden horizontal */
+
+@media (min-width: 901px) {
+
+  .oferta,
+  .pt-1,
+  .pt-2,
+  .pt-3,
+  .ds-1,
+  .ds-2,
+  .ct-l-main,
+  .categorias-content,
+  .ft-up {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Móvil: permitir que se acomoden verticalmente */
+
+@media (max-width: 900px) {
+  .oferta,
+  .pt-1,
+  .pt-2,
+  .pt-3,
+  .ds-1,
+  .ds-2,
+  .ct-l-main,
+  .categorias-content,
+  .ft-up {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pt-slides{  
+    padding: 10px 11%;
+    gap: 25%;
+  }
+  .pt-1,.pt-2,.pt-3{
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+  .oferta {
+    overflow: hidden;
+  }
+}
+/*Footer*/
+footer {
+  background-color: #1E3F85 /*#17448C*/;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  z-index: 1;
+}
+
+.ft-up {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ft-up a {
+  text-decoration: none;
+  color: #FDF9F7;
+}
+
+.ft-bot {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #FDF9F7;
+}
+
+.login-formulario {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 50%;
+  font-size: 16px;
+  color: #FDF9F7;
+}
+.login-formulario p{
+  margin: 0;
+  cursor: default;
+}
+.links-login p{
+  cursor: default;
+}
+.links-login a{
+  color: #f56346;
+}
+
+
+/*mas cosas*/
+.texto_ {
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 300px;
+  border: none;
+}
+#fecha_nac{
+  cursor: pointer;
+}
+
+ #genero{
+  width: 322px;
+  cursor: pointer;
+}
+.boton_f {
+  color: #FDF9F7;
+  background-color: #c84b31;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  max-width: 100px;
+}
+
+label {
+  color: #FDF9F7;
+  cursor: pointer;
+}
+
+.termino_ {
+  display: flex;
+}
+.termino_ label{
+  white-space: nowrap;
+  padding: 5px 10px;
+}
+
+#acerca {
+  text-align: center;
+}
+
+#soporte a{
+  color: #f56346;
+}
+
+.gato-img {
+  width: 250px;
+}
