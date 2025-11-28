@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LazzyCatt</title>
+    <link rel="stylesheet" href="/main-components/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header id="header"></header>
+    <main>
+        <!--Formulario de inicio de sesion-->
+        <form class="login-formulario" action="/login/">
+            <h1>Registrar Usuario</h1>
+            <p><strong>Credenciales</strong></p>
+            <input type="text" placeholder="Usuario" class="texto_" required>
+            <input type="email" name="correo" placeholder="Correo" class="texto_" required> 
+            <input type="password" placeholder="Contraseña" class="texto_" required>
+            <input type="password" placeholder="Confirmar Contraseña" class="texto_" required>
+            <p><strong>Fecha de Nacimiento</strong></p>
+            <input type="date" name="fecha_nac" class="texto_" id="fecha_nac" required>
+            <p><strong>Ubicación</strong></p>
+            <input type="text" placeholder="Pais" class="texto_" required>
+            <div class="termino_">
+                <input type="checkbox" name="termino" id="termino" required>
+                <label for="termino">Terminos y condiciones</label>
+            </div>
+            <input type="submit" value="Registrar" class="boton_f">
+        </form>
+    </main>
+    <footer id="footer"></footer>
+    <script src="/main-components/components.js"></script>
+</body>
+
+</html>

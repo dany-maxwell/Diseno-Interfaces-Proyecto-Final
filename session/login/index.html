@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LazzyCatt</title>
+    <link rel="stylesheet" href="/main-components/styles.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
     <!--Cabecera-->
-    <header>
-        <div class="logo">
-            <a href="/tienda/"><h1>LazzyCatt</h1></a>
-        </div>
-    </header>
+    <header id="header"></header>
     <main>
         <!--Inicio de sesion-->
         <h1>Iniciar Sesión</h1>
@@ -29,24 +26,13 @@
             <input type="submit" value="Ingresar" class="boton_f">
         </form>
         <div class="links-login">
-            <p>¿Olvidaste tu contraseña? <a href="/recuperar/">Recupérala</a></p>
-            <p>¿Aún no te has registrado? <a href="/registro/">Regístrate aquí</a></p>
+            <p>¿Olvidaste tu contraseña? <a href="/session/recuperar/">Recupérala</a></p>
+            <p>¿Aún no te has registrado? <a href="/session/registro/">Regístrate aquí</a></p>
         </div>
     </main>
     <!--Pie de pagina-->
-    <footer>
-        <div class="ft-up">
-            <a href="/acercaDeNosotros/"><p>Acerca de LazzyCattGames</p></a>
-            <a href="/soporte/"><p>Soporte</p></a>
-            <a href="/politicas/"><p>Políticas</p></a>
-            <a href=""><p><i class="fa-brands fa-x-twitter"></i></p></a>
-            <a href=""><p><i class="fa-brands fa-facebook-f"></i></p></a>
-            <a href=""><p><i class="fa-brands fa-instagram"></i></p></a>
-        </div>
-        <div class="ft-bot">
-            <p>Diseñado por: <strong>Daniel Orozco</strong> y <strong>Gabriel Toaquiza</strong></p>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
+    <script src="/main-components/components.js"></script>
 </body>
 
 </html>
