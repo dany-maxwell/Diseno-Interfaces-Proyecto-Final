@@ -1,0 +1,69 @@
+.login-formulario {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 50%;
+  font-size: 16px;
+  color: #FDF9F7;
+}
+.login-formulario p{
+  margin: 0;
+  cursor: default;
+}
+.links-login p{
+  cursor: default;
+}
+.links-login a{
+  color: #f56346;
+}
+/*mas cosas*/
+.texto_ {
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 300px;
+  border: none;
+}
+#fecha_nac{
+  cursor: pointer;
+}
+
+ #genero{
+  width: 322px;
+  cursor: pointer;
+}
+.boton_f {
+  color: #FDF9F7;
+  background-color: #c84b31;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  max-width: 100px;
+}
+
+label {
+  color: #FDF9F7;
+  cursor: pointer;
+}
+
+.termino_ {
+  display: flex;
+}
+.termino_ label{
+  white-space: nowrap;
+  padding: 5px 10px;
+}
+
+#acerca {
+  text-align: center;
+}
+
+#soporte a{
+  color: #f56346;
+}
+
+.gato-img {
+  width: 250px;
+}

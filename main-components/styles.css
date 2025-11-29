@@ -7,24 +7,27 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #0D1B3A;
+  background-color: #00040e;
   font-family: Arial, Helvetica, sans-serif;
-  color: #FDF9F7;
+  color: #F8FAFC;
   margin: 0;
   min-height: 100vh;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   flex: 1;
   box-sizing: border-box;
+  align-items: center;
 }
 
 /*Configuracion Header*/
 header {
-  background-color: #1E3F85;
+  background-color: #09153a;
   position: sticky;
   top: 0;
   display: flex;
@@ -36,7 +39,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: #FDF9F7;
+  color: #F8FAFC;
 }
 
 /*Configuracion menu oculto para responsividad*/
@@ -75,7 +78,7 @@ header a {
 /*Configuracion Header barra de busqueda*/
 .buscar form input {
   border: none;
-  background-color: #FDF9F7;
+  background-color: #F8FAFC;
   width: 300px;
   height: 30px;
   border-radius: 10px;
@@ -129,7 +132,7 @@ header a {
 }
 
 .user-options li:hover{
-  background-color: #FDF9F7;
+  background-color: #F8FAFC;
 }
 .user-options li:hover a{
   color: #191919;
@@ -148,7 +151,7 @@ header a {
 .bt-download {
   font-size: 28px;
   border: none;
-  background-color: #1E3F85;
+  background-color: #09153a;
   color: #FDF9F7;
   cursor: pointer;
 }
@@ -243,7 +246,7 @@ header a {
 }
 /*Footer*/
 footer {
-  background-color: #1E3F85 /*#17448C*/;
+  background-color: #09153a /*#17448C*/;
   display: flex;
   flex-direction: column;
   padding: 0 40px;
@@ -267,74 +270,3 @@ footer {
   border-top: 1px solid #FDF9F7;
 }
 
-.login-formulario {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  border: none;
-  width: 50%;
-  font-size: 16px;
-  color: #FDF9F7;
-}
-.login-formulario p{
-  margin: 0;
-  cursor: default;
-}
-.links-login p{
-  cursor: default;
-}
-.links-login a{
-  color: #f56346;
-}
-
-
-/*mas cosas*/
-.texto_ {
-  border-radius: 20px;
-  padding: 10px 10px;
-  width: 300px;
-  border: none;
-}
-#fecha_nac{
-  cursor: pointer;
-}
-
- #genero{
-  width: 322px;
-  cursor: pointer;
-}
-.boton_f {
-  color: #FDF9F7;
-  background-color: #c84b31;
-  border-radius: 20px;
-  padding: 5px 10px;
-  border: none;
-  margin-bottom: 20px;
-  cursor: pointer;
-  max-width: 100px;
-}
-
-label {
-  color: #FDF9F7;
-  cursor: pointer;
-}
-
-.termino_ {
-  display: flex;
-}
-.termino_ label{
-  white-space: nowrap;
-  padding: 5px 10px;
-}
-
-#acerca {
-  text-align: center;
-}
-
-#soporte a{
-  color: #f56346;
-}
-
-.gato-img {
-  width: 250px;
-}

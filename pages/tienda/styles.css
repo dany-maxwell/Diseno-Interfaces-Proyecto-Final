@@ -1,10 +1,10 @@
 /*Configuracion Main Ofertas*/
 
 .carrusel {
-  background-color: #040B16;
+  background-color: #0D1B3A;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 50%;
   border-radius: 5px;
 }
 
