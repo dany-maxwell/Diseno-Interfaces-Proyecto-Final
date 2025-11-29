@@ -1,30 +1,38 @@
 <header>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <div class="logo">
-            <a href="/pages/tienda/">
-                <h1>LazzyCatt</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <div class="logo">
+        <a href="/pages/tienda/">
+            <h1>LazzyCatt</h1>
+        </a>
+    </div>
+    <nav class="pages">
+        <ul>
+            <li><a href="/pages/tienda/">TIENDA</a></li>
+            <li><a href="/pages/novedades/">NOVEDADES</a></li>
+            <li><a href="/pages/comunidad/">COMUNIDAD</a></li>
+        </ul>
+    </nav>
+    <div class="buscar">
+        <form action="" method="get">
+            <input type="text" name="query" placeholder="Buscar">
+        </form>
+    </div>
+
+    <div class="buttons">
+        <div class="button-dw">
+            <a href="#"><button class="bt-download"><i class="fa-solid fa-circle-down"></i></button></a>
+        </div>
+
+        <div class="no-logueado">
+            <a href="/session/login/">
+                <button class="bt-login">Iniciar Sesion</button>
             </a>
         </div>
-        <nav class="pages">
-            <ul>
-                <li><a href="/pages/tienda/">TIENDA</a></li>
-                <li><a href="/pages/novedades/">NOVEDADES</a></li>
-                <li><a href="/pages/comunidad/">COMUNIDAD</a></li>
-                <li><a href="/pages/carrito/">CARRITO</a></li>
-            </ul>
-        </nav>
-        <div class="buscar">
-            <form action="" method="get">
-                <input type="text" name="query" placeholder="Buscar">
-            </form>
-        </div>
-        <div class="buttons">
-            <div class="button-dw">
-                <a href="#"><button class="bt-download"><i class="fa-solid fa-circle-down"></i></button></a>
-            </div>
+
+        <div class="logueado" style="display: none;">
             <div class="button-us">
                 <input type="checkbox" id="user-toogle">
                 <label for="user-toogle" class="user-icon">
@@ -37,10 +45,13 @@
                         <li><a href="#">Perfil</a></li>
                         <li><a href="#">Configuraciones</a></li>
                         <li><a href="/soporte/">Soporte</a></li>
-                        <li class="logout"><a href="/session/login/">Cerrar Sesion <i
-                                    class="fa-solid fa-right-from-bracket"></i></a></li>
+                        <li class="logout">
+                            <a href="#" id="btnLogout">
+                                Cerrar Sesion <i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </header>
+    </div>
+</header>

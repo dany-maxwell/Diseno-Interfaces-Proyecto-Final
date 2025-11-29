@@ -156,6 +156,20 @@ header a {
   cursor: pointer;
 }
 
+.bt-login{
+  border: none;
+  height: 26px;
+  width: 100px;
+  border-radius: 3px;
+  color: #F8FAFC;
+  background-color: #ee4320;
+  cursor: pointer;
+}
+
+.bt-login:hover{
+  background-color: #fc5837;
+}
+
 /*Configuracion Header Responsividad*/
 
 @media (max-width: 900px) {

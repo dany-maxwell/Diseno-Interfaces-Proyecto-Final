@@ -16,34 +16,36 @@
     <main>
         <!--Formulario de inicio de sesion-->
         <div class="card">
-            <h2>Crear Cuenta</h2>
+            <h2>Crear una Cuenta</h2>
             <form id="register-form" class="register">
                 <label for="user">Usuario</label>
-                <input type="text" id="user">
+                <input type="text" id="user" class="in-register" required>
 
                 <label for="mail">Correo</label>
-                <input type="email" id="mail" required>
+                <input type="email" id="mail" class="in-register" required>
 
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" required>
+                <input type="password" id="password" class="in-register" required>
 
                 <label for="con_password">Confirmar Contraseña</label>
-                <input type="password" id="con_password" class="con_cntrs" required>
+                <input type="password" id="con_password" class="in-register" required>
+                <p id="ms-pass"></p>
 
                 <label for="fecha_nac">Fecha Nacimiento</label>
-                <input type="date" id="fecha_nac" required>
+                <input type="date" id="fecha_nac" class="in-register" required>
 
                 <label for="pais">Pais de Recidencia</label>
-                <input type="text" id="pais" required>
-                <div class="aceptar">
-                    <input type="checkbox" name="termino" id="termino" required>
-                    <label for="termino">Terminos y Condiciones</label>
-                </div>
-                <input type="submit" value="Crear Cuenta" class="boton_f" id="registrar">
+                <input type="text" id="pais" class="in-register" required>
+
+                <label><input type="checkbox" id="ch-terminos">Acepto los Terminos y Condiciones</label>
+
+                <input type="submit" value="Crear Cuenta" id="registrar">
             </form>
         </div>
     </main>
     <footer id="footer"></footer>
+    <script src="/main-components/components.js"></script>
+    <script src="registro.js"></script>
 </body>
-<script src="registro.js"></script>
+
 </html>
