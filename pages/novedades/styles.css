@@ -1,40 +1,88 @@
-/*Novedades*/
-/*noticias principales "Nuevas"*/
-
-.card-juego {
-  position: relative;
-  width: 350px;
-  border-radius: 8px;
-  overflow: hidden;
+/*---------------------------------------------------------------------------------*/
+/*---------------------------Configuracion Noticias Nuevas-------------------------*/
+/*---------------------------------------------------------------------------------*/
+.nt-box{
+  border-radius: 5px;
+  padding: 10px;
+  width: 1050px;
 }
 
-.card-juego img {
-  width: 100%;
+.nt-line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nt-main {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.nt-main img {
+  width: 525px;
+  height: 280px;
+  object-fit: cover;
   display: block;
 }
 
-/* Botón superpuesto */
-.btn-overlay {
+.nt-over {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  background: rgba(200, 200, 200, 0.85); /* gris translúcido */
-  color: #1a1a1a;
-  font-weight: bold;
+  bottom: 0;
+  background-color: #00040e83 ;
+  color: #F8FAFC;
+  padding: 10px;
   font-size: 14px;
-  letter-spacing: 0.5px;
-
-  padding: 10px 25px;
-  border-radius: 4px;
-
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
 
-/* Hover tipo tienda */
-.btn-overlay:hover {
-  background: rgba(230, 230, 230, 0.95);
-  transform: translateX(-50%) scale(1.05);
+.nt-main:hover {
+  transform: scale(1.01);
+}
+
+/*---------------------------------------------------------------------------------*/
+/*-----------------------Configuracion Noticias GHenerales-------------------------*/
+/*---------------------------------------------------------------------------------*/
+.nt-news{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nt-new{
+  background-color: #0f215a;
+  color: #F8FAFC;
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nt-new img{
+  flex-shrink: 0;
+  width: 340px;
+  height: 215px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.nt-new div{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 20px;
+}
+
+.nt-new .nt-title{
+  font-weight: bold;
+}
+
+.nt-new:hover{
+  transform: scale(1.01);
+  background-color: #081233;
 }
