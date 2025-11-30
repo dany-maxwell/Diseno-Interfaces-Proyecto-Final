@@ -74,7 +74,7 @@
   main{
     max-width: 90%;
   }
-  .bt{
+  .carrusel{
     display: none;
   }
 }
@@ -154,7 +154,15 @@
 .ds-textbox {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+}
+
+.mas{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: #00040e;
 }
 
 .ds-box {
@@ -172,7 +180,14 @@
   padding: 0 30px;
 }
 
-.ds-box img {
+.juego-ds {
+  padding: 0;
+  border: none;
+  width: 230px;
+  height: 120px;
+  cursor: pointer;
+}
+.juego-ds img {
   width: 230px;
   height: 120px;
   object-fit: cover;
@@ -181,47 +196,74 @@
 /*---------------------------------------------------------------------------------*/
 /*----------------------------Configuracion Categorias-----------------------------*/
 /*---------------------------------------------------------------------------------*/
-.ct-l-box {
-  display: flex;
-  list-style: none;
-  background-color: #040B16;
-  font-size: 20px;
-  padding: 15px 25px;
-  justify-content: space-between;
+.ct-box{
+  background-color: #0f215a;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
+  touch-action: pan-y;
+  margin-bottom: 20px;
 }
 
-.ct-l-main {
+.ct-names{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.ct-names .active{
+  background-color: #fc5837;
+}
+
+.ct-main{
   display: flex;
   gap: 20px;
-  overflow: hidden;
 }
 
-.ct-elegida {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  font-weight: bold;
-  color: #678CDA;
+.ct-name{
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 4px;
 }
 
-.categorias-content {
-  background-color: #040B16;
+.mas2 {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.ct-slides {
+  width: 100%;
   display: flex;
-  border-radius: 5px;
-  margin: 10px 0;
   padding: 10px;
   justify-content: space-between;
-  overflow: hidden;
+  transition: transform 0.5s ease;
 }
 
-.categorias-content p {
-  margin: 0;
+.ct-games{
+  display: flex;
+  justify-content: space-between;
 }
 
-.categorias-content img {
-  width: 300px;
-  height: 150px;
+.ct-games img{
+  width: 350px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 6px;
+}
+
+.ct-game{
+  background-color: #00040e;
+  color: #F8FAFC;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ct-game p{
+  margin: 5px;
 }

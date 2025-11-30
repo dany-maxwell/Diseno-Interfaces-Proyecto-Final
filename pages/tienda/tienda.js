@@ -44,10 +44,8 @@ ofertas_cr.addEventListener("touchend", e => {
 
 function moverCarrusel() {
   if (startX - endX > 50) {
-    // Swipe a la izquierda
     if (index < ofertas.length - 1) index++;
   } else if (endX - startX > 50) {
-    // Swipe a la derecha
     if (index > 0) index--;
   }
 
@@ -83,3 +81,33 @@ pt_next.addEventListener("click", () => {
     }
     mostrarPTSilde(index);
 })
+
+//-------------------------------------------------------------------//
+//--------------------------Scrpts Descubrir-------------------------//
+//-------------------------------------------------------------------//
+
+//-------------------------------------------------------------------//
+//-------------------------Scrpts Categorias-------------------------//
+//-------------------------------------------------------------------//
+
+const ct_botones = document.querySelectorAll(".ct-name")
+const ct_juegos = document.querySelectorAll(".ct-games")
+
+ct_botones.forEach(boton => {
+    boton.addEventListener("click", () =>{
+        const categoria = boton.dataset.category;
+        
+        ct_botones.forEach(b => b.classList.remove("active"));
+        boton.classList.add("active");
+
+        ct_juegos.forEach(juego => {
+            if (juego.dataset.category === categoria){
+                juego.style.display = "block";
+            }
+            else {
+                juego.style.display = "none";
+            }
+        });
+    });
+});
+document.querySelector('[data-category="accion"]').click();

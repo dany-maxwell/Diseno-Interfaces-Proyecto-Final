@@ -18,7 +18,7 @@
         <section class="ofertas">
             <h2>Ofertas y Destacados</h2>
             <div class="of-box">
-                <button class="bt" id="of-prev">
+                <button class="bt carrusel" id="of-prev">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <div class="of-slides">
@@ -55,7 +55,7 @@
                     </button>
                 </div>
 
-                <button class="bt" id="of-next">
+                <button class="bt carrusel" id="of-next">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
@@ -65,7 +65,7 @@
         <section class="para-ti">
             <h2>Para ti</h2>
             <div class="pt-box">
-                <button class="bt" id="pt-prev">
+                <button class="bt carrusel" id="pt-prev">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <div class="pt-slides">
@@ -139,7 +139,7 @@
                         </button>
                     </div>
                 </div>
-                <button class="bt" id="pt-next">
+                <button class="bt carrusel" id="pt-next">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
@@ -148,69 +148,144 @@
         <section class="descubrir">
             <div class="ds-textbox">
                 <h2>Descubre Experiencias</h2>
-                <p class="mas">ver mas <i class="fa-solid fa-chevron-right"></i></p>
+                <button class="bt mas" id="ds-mas">ver mas <i class="fa-solid fa-chevron-right"></i></p>
             </div>
             <div class="ds-box">
                 <div class="ds-1">
-                    <div class="juego-ds">
+                    <button class="juego-ds">
                         <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
-                    </div>
-                    <div class="juego-ds">
+                    </button>
+                    <button class="juego-ds">
                         <img src="/images/juegos/black-myth-wukong.jpg" alt="juego1">
-                    </div>
-                    <div class="juego-ds">
+                    </button>
+                    <button class="juego-ds">
                         <img src="/images/juegos/detroit-become-human.jpg" alt="juego1">
-                    </div>
-                    <div class="juego-ds">
+                    </button>
+                    <button class="juego-ds">
                         <img src="/images/juegos/Uncharted-4.jpg" alt="juego1">
-                    </div>
+                    </button>
                 </div>
                 <div class="ds-2">
-                    <div class="juego-ds">
+                    <button class="juego-ds">
                         <img src="/images/juegos/dont-sarve-thogether.jpg" alt="juego1">
-                    </div>
-                    <div class="juego-ds">
+                    </button>
+                    <button class="juego-ds">
                         <img src="/images/juegos/jedi-fallen-orer.jpeg" alt="juego1">
-                    </div>
-                    <div class="juego-ds">
+                    </button>
+                    <button class="juego-ds">
                         <img src="/images/juegos/flat-world.jpg" alt="juego1">
-                    </div>
-                    <div class="juego-ds">
+                    </button>
+                    <button class="juego-ds">
                         <img src="/images/juegos/Devil_May_Cry_5.jpg" alt="juego1">
-                    </div>
+                    </button>
                 </div>
             </div>
         </section>
-        <!--Ofertas-->
+        <!--Categorias-->
         <section class="categorias">
             <h2>Categorias</h2>
-            <div class="categorias">
-                <nav class="ct-l-box">
-                    <div class="ct-l-main">
-                        <li class="ct-elegida">Accion</li>
-                        <li>Aventura</li>
-                        <li>Shooter</li>
-                        <li>SoulsLike</li>
-                        <li>Metroidvania</li>
-                        <li>RPG</li>
+            <div class="ct-box">
+                <nav class="ct-names">
+                    <div class="ct-main">
+                        <li><button class="bt ct-name active" data-category="accion">Acción</button></li>
+                        <li><button class="bt ct-name" data-category="aventura">Aventura</button></li>
+                        <li><button class="bt ct-name" data-category="shooter">Shooter</button></li>
+                        <li><button class="bt ct-name" data-category="souls">Souls-Like</button></li>
+                        <li><button class="bt ct-name" data-category="rpg">RPG</button></li>
+                        <li><button class="bt ct-name" data-category="metroidvania">Metroidvania</button></li>
                     </div>
-                    <div class="ct-l-mas">
-                        <li>Mas <i class="fa-solid fa-chevron-right"></i></li>
+                    <div class="ct-mas">
+                        <li><button class="bt mas2" id="ct-mas">Mas <i class="fa-solid fa-chevron-right"></i></button>
+                        </li>
                     </div>
                 </nav>
             </div>
-            <div class="categorias-content">
-                <div class="ct-game">
-                    <img src="/images/juegos/battelfield-6.jpg" alt="">
-                    <p>Battelfield 6</p>
-                </div>
-                <div class="ct-game">
-                    <img src="/images/juegos/Devil_May_Cry_5.jpg" alt="">
-                    <p>Devil May Cry 5</p>
-                </div>
-                <div class="ct-game">
-                    <img src="/images/juegos/Uncharted-4.jpg" alt="">
-                    <p>Uncharted 5</p>
+            <div class="ct-box">
+                <div class="ct-slides">
+                    <div class="ct-games" data-category="accion">
+                        <button class="ct-game">
+                            <img src="/images/juegos/solo-leveling.jpg" alt="">
+                            <p>Solo Leveling: ARISE OVERDRIVE</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/marvel-rivals.jpg" alt="">
+                            <p>Marvel Rivals</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/space-marin.jpg" alt="">
+                            <p>Warhammer 40,000: Space Marine 2</p>
+                        </button>
+                    </div>
+                    <div class="ct-games" data-category="aventura">
+                        <button class="ct-game">
+                            <img src="/images/juegos/split-fictionjpg.jpg" alt="">
+                            <p>Split Fiction</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/where-winds-meet.jpg" alt="">
+                            <p>Where Winds Meet</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/red-dead-2.jpg" alt="">
+                            <p>Red Dead Redemption 2</p>
+                        </button>
+                    </div>
+                    <div class="ct-games" data-category="shooter">
+                        <button class="ct-game">
+                            <img src="/images/juegos/battelfield-6.jpg" alt="">
+                            <p>Battelfield 6</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/gtav.jpg" alt="">
+                            <p>Grand Theft Auto V</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/the-finals.jpg" alt="">
+                            <p>THE FINALS</p>
+                        </button>
+                    </div>
+                    <div class="ct-games" data-category="souls">
+                        <button class="ct-game">
+                            <img src="/images/juegos/thymesia.jpg" alt="">
+                            <p>Thymesia</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/lies-of-p.jpg" alt="">
+                            <p>Lies of P</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/black-myth-wukong.jpg" alt="">
+                            <p>Black Myth: Wukong</p>
+                        </button>
+                    </div>
+                    <div class="ct-games" data-category="rpg">
+                        <button class="ct-game">
+                            <img src="/images/juegos/ghost-of-tsushima.jpg" alt="">
+                            <p>Ghost of Tsushima DIRECTOR'S CUT</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/the-witcher-3.jpg" alt="">
+                            <p>The Witcher 3: Wild Hunt</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/god-of-war.jpg" alt="">
+                            <p>God of War</p>
+                        </button>
+                    </div>
+                    <div class="ct-games" data-category="metroidvania">
+                        <button class="ct-game">
+                            <img src="/images/juegos/blasphemous.jpg" alt="">
+                            <p>Blasphemous</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/ori.jpg" alt="">
+                            <p>Ori and the Will of the Wisps</p>
+                        </button>
+                        <button class="ct-game">
+                            <img src="/images/juegos/shinobi-art-vengance.jpg" alt="">
+                            <p>SHINOBI: Art of Vengeance</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
