@@ -6,6 +6,7 @@ formLogin.addEventListener("submit", function(e) {
     const usuarioIngresado = document.getElementById("user").value;
     const passwordImgresado = document.getElementById("password").value;
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const msg = document.getElementById("msg-log");
 
     const usuarioValido = usuarios.find(
         u => u.usuario === usuarioIngresado && u.contraseña === passwordImgresado
@@ -19,6 +20,6 @@ formLogin.addEventListener("submit", function(e) {
         localStorage.setItem("usuarioActivo",JSON.stringify(usuarioValido));
         window.location.href = "/pages/tienda/"
     } else {
-        alert("Usuario o Contraseña incorrectos")
+        msg.textContent = "Usuario o Contraseña Incorrectos"
     }
 })

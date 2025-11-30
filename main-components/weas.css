@@ -67,3 +67,50 @@ label {
 .gato-img {
   width: 250px;
 }
+
+/* Escritorio: mantener orden horizontal */
+
+@media (min-width: 901px) {
+
+  .oferta,
+  .pt-1,
+  .pt-2,
+  .pt-3,
+  .ds-1,
+  .ds-2,
+  .ct-l-main,
+  .categorias-content,
+  .ft-up {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Móvil: permitir que se acomoden verticalmente */
+
+@media (max-width: 900px) {
+  .oferta,
+  .pt-1,
+  .pt-2,
+  .pt-3,
+  .ds-1,
+  .ds-2,
+  .ct-l-main,
+  .categorias-content,
+  .ft-up {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pt-slides{  
+    padding: 10px 11%;
+    gap: 25%;
+  }
+  .pt-1,.pt-2,.pt-3{
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+  .oferta {
+    overflow: hidden;
+  }
+}

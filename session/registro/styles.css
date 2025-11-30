@@ -4,7 +4,7 @@
     padding: 20px;
     width: 400px;
     margin: 30px;
-    height: 100%;
+    height: auto;
 }
 
 .register {
@@ -40,7 +40,7 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: #ee4320;
+    background-color: #c84b31;
     color: #F8FAFC;
 }
 

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/main-components/styles.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="/main-components/components.js"></script>
 </head>
 
 <body>
@@ -18,168 +17,131 @@
         <!--Ofertas-->
         <section class="ofertas">
             <h2>Ofertas y Destacados</h2>
-            <div class="carrusel">
-                <input type="radio" name="of-slide" id="of-slide1" checked>
-                <input type="radio" name="of-slide" id="of-slide2">
-                <input type="radio" name="of-slide" id="of-slide3">
+            <div class="of-box">
+                <button class="bt" id="of-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
                 <div class="of-slides">
-                    <div class="oferta">
+                    <button class="oferta">
                         <img src="/images/juegos/battelfield-6.jpg" alt="battelfield6">
-                        <div class="oferta-text">
+                        <div class="of-text">
                             <h2>Battelfield6</h2>
                             <p>La experiencia definitiva de guerra total. En una guerra de tanques, aviones
                                 de
                                 combate y
                                 arsenales de combate masivos, tu escuadrón es el arma más letal.</p>
-                            <button class="bt-precio">-20% <strong>$56</strong> $69.99</button>
+                            <label class="bt-precio">-20% <strong>$56</strong> $69.99</label>
                         </div>
-                    </div>
-                    <div class="oferta">
+                    </button>
+                    <button class="oferta">
                         <img src="/images/juegos/darksouls3.jpg" alt="darksouls3">
-                        <div class="oferta-text">
+                        <div class="of-text">
                             <h2>Dark Souls III</h2>
                             <p>Dark Souls sigue superando los límites con el último y ambicioso capítulo de esta
                                 aclamada saga que ha definido el género. ¡Prepárate y abraza la oscuridad!</p>
-                            <button class="bt-precio">-40% $59.99 $35</button>
+                            <label class="bt-precio">-40% $59.99 $35</label>
                         </div>
-                    </div>
-                    <div class="oferta">
+                    </button>
+                    <button class="oferta">
                         <img src="/images/juegos/sekiro.jpg" alt="sekiro">
-                        <div class="oferta-text">
+                        <div class="of-text">
                             <h2>Sekiro</h2>
                             <p>Juego del Año - The Game Awards 2019. Mejor Juego de Acción de 2019 - IGN. Forja tu
                                 propio camino hacia la venganza en la galardonada aventura de FromSoftware, creadores de
                                 Bloodborne y la saga Dark Souls. Venga tu honor. Restaura tu honor. Mata con ingenio.
                             </p>
-                            <button class="bt-precio">-50% $59.99 $29</button>
+                            <label class="bt-precio">-50% $59.99 $29</label>
                         </div>
-                    </div>
+                    </button>
                 </div>
-                <label for="of-slide3" class="bt-oferta-prev b1">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </label>
-                <label for="of-slide1" class="bt-oferta-prev b2">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </label>
-                <label for="of-slide2" class="bt-oferta-prev b3">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </label>
-                <label for="of-slide2" class="bt-oferta-next b1">
+
+                <button class="bt" id="of-next">
                     <i class="fa-solid fa-chevron-right"></i>
-                </label>
-                <label for="of-slide3" class="bt-oferta-next b2">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </label>
-                <label for="of-slide1" class="bt-oferta-next b3">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </label>
+                </button>
             </div>
-            <div class="controles">
-                <label for="of-slide1" class="puntos"></label>
-                <label for="of-slide2" class="puntos"></label>
-                <label for="of-slide3" class="puntos"></label>
-            </div>
+
         </section>
         <!--Para ti-->
         <section class="para-ti">
             <h2>Para ti</h2>
-            <div class="para-ti-box">
-                <div class="carrusel">
-                    <input type="radio" name="pt-slide" id="pt-slide1" checked>
-                    <input type="radio" name="pt-slide" id="pt-slide2">
-                    <input type="radio" name="pt-slide" id="pt-slide3">
-                    <div class="pt-slides">
-                        <div class="pt-1">
-                            <div class="juego-parati">
-                                <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Age of Empires: Definitive Edition</p>
-                                    <p class="pt-juego-precio">$19.99</p>
-                                </div>
+            <div class="pt-box">
+                <button class="bt" id="pt-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="pt-slides">
+                    <div class="pt-slide">
+                        <button class="pt-juego">
+                            <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Age of Empires: Definitive Edition</p>
+                                <p class="pt-precio">$19.99</p>
                             </div>
-                            <div class="juego-parati">
-                                <img src="/images/juegos/black-myth-wukong.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Black Myth Wukong</p>
-                                    <p class="pt-juego-precio">$59.99</p>
-                                </div>
+                        </button>
+                        <button class="pt-juego">
+                            <img src="/images/juegos/black-myth-wukong.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Black Myth Wukong</p>
+                                <p class="pt-precio">$19.99</p>
                             </div>
-                            <div class="juego-parati">
-                                <img src="/images/juegos/detroit-become-human.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Detroit Become Human</p>
-                                    <p class="pt-juego-precio">$31.99</p>
-                                </div>
+                        </button>
+                        <button class="pt-juego">
+                            <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Age of Empires: Definitive Edition</p>
+                                <p class="pt-precio">$19.99</p>
                             </div>
-
-                        </div>
-                        <div class="pt-2">
-                            <div class="juego-parati">
-                                <img src="/images/juegos/dont-sarve-thogether.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Don't Starve Together</p>
-                                    <p class="pt-juego-precio">$6.59</p>
-                                </div>
-                            </div>
-                            <div class="juego-parati">
-                                <img src="/images/juegos/jedi-fallen-orer.jpeg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>STAR WARS Jedi: Fallen Order</p>
-                                    <p class="pt-juego-precio">$39.99</p>
-                                </div>
-                            </div>
-                            <div class="juego-parati">
-                                <img src="/images/juegos/flat-world.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Flatworld</p>
-                                    <p class="pt-juego-precio">$6.99</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-3">
-                            <div class="juego-parati">
-                                <img src="/images/juegos/resident-evil-7.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Resident Evil 7 Biohazard</p>
-                                    <p class="pt-juego-precio">$15.00</p>
-                                </div>
-                            </div>
-                            <div class="juego-parati">
-                                <img src="/images/juegos/Devil_May_Cry_5.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>Devil May Cry 5</p>
-                                    <p class="pt-juego-precio">$23.00</p>
-                                </div>
-                            </div>
-                            <div class="juego-parati">
-                                <img src="/images/juegos/Uncharted-4.jpg" alt="juego1">
-                                <div class="pt-juego-text">
-                                    <p>UNCHARTED 4: A Thief’s End</p>
-                                    <p class="pt-juego-precio">$49.99</p>
-                                </div>
-                            </div>
-                        </div>
+                        </button>
                     </div>
-                    <label for="pt-slide3" class="bt-parati-prev b1">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </label>
-                    <label for="pt-slide1" class="bt-parati-prev b2">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </label>
-                    <label for="pt-slide2" class="bt-parati-prev b3">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </label>
-                    <label for="pt-slide2" class="bt-parati-next b1">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </label>
-                    <label for="pt-slide3" class="bt-parati-next b2">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </label>
-                    <label for="pt-slide1" class="bt-parati-next b3">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </label>
+                    <div class="pt-slide">
+                        <button class="pt-juego">
+                            <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Age of Empires: Definitive Edition</p>
+                                <p class="pt-precio">$19.99</p>
+                            </div>
+                        </button>
+                        <button class="pt-juego">
+                            <img src="/images/juegos/black-myth-wukong.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Black Myth Wukong</p>
+                                <p class="pt-precio">$19.99</p>
+                            </div>
+                        </button>
+                        <button class="pt-juego">
+                            <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Age of Empires: Definitive Edition</p>
+                                <p class="pt-precio">$19.99</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="pt-slide">
+                        <button class="pt-juego">
+                            <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Age of Empires: Definitive Edition</p>
+                                <p class="pt-precio">$19.99</p>
+                            </div>
+                        </button>
+                        <button class="pt-juego">
+                            <img src="/images/juegos/black-myth-wukong.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Black Myth Wukong</p>
+                                <p class="pt-precio">$19.99</p>
+                            </div>
+                        </button>
+                        <button class="pt-juego">
+                            <img src="/images/juegos/age-of-empires-2-definitive-edition-1.jpg" alt="juego1">
+                            <div class="pt-text">
+                                <p class="pt-name">Age of Empires: Definitive Edition</p>
+                                <p class="pt-precio">$19.99</p>
+                            </div>
+                        </button>
+                    </div>
                 </div>
-
+                <button class="bt" id="pt-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
         </section>
         <!--Descubrir Experiencias-->
@@ -222,7 +184,7 @@
         <!--Ofertas-->
         <section class="categorias">
             <h2>Categorias</h2>
-            <div class="categorias-list">
+            <div class="categorias">
                 <nav class="ct-l-box">
                     <div class="ct-l-main">
                         <li class="ct-elegida">Accion</li>
@@ -254,7 +216,9 @@
         </section>
     </main>
     <footer id="footer"></footer>
-    
+
+    <script src="/main-components/components.js"></script>
+    <script src="tienda.js"></script>
 </body>
 
 </html>

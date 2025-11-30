@@ -4,7 +4,7 @@
     padding: 20px;
     width: 400px;
     margin: 30px;
-    height: 100%;
+    height: auto;
 }
 
 .login {
@@ -21,6 +21,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.login .in-login:hover{
+    background-color: #cce3f8;
+}
+
 .login label {
     cursor: pointer;
     margin-top: 20px;
@@ -32,8 +36,20 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    background-color: #e34f14;
+    background-color: #c84b31;
     color: #F8FAFC;
+}
+
+#logear:hover{
+    background-color: #fc5837;
+}
+
+#msg-log{
+    margin: 0;
+    padding: 0;
+    color: #ee4320;
+    font-size: 14px;
+    padding-left: 10px;
 }
 
 .card a {
