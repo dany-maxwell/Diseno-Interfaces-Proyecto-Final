@@ -5,25 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LazzyCatt</title>
+
+    <!-- Tus estilos -->
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/main-components/styles.css">
+
+    <!-- Librería Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="/main-components/components.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Script del header y footer -->
+    <script src="/main-components/components.js" defer></script>
 </head>
 
 <body>
-    <!--Cabecera-->
+    <!-- Cabecera -->
     <header id="header"></header>
+
     <main>
-        <h1>Recuperacion de Contraseña</h1>
-        <form class="login-formulario" action="/login/">
-            <p>Escribe el correo electronico con el que eses registrado. Posteriormente llegara a tu correo un link derecuperacion de contraseña</p>
-            <input type="text" placeholder="Correo registrado" class="texto_" required> 
-            <input type="submit" value="Enviar" class="boton_f">
-        </form>
-        <div class="links-login">
-            <p>¿Aún no te has registrado? <a href="/session/registro/">Regístrate aquí</a></p>
+        <div class="recover-container">
+            <h1>Recuperación de Contraseña</h1>
+
+            <p>Escribe el correo electrónico con el que estás registrado. Te enviaremos un enlace para recuperar tu contraseña.</p>
+
+            <!-- FORMULARIO CORRECTAMENTE CONFIGURADO -->
+            <form id="recover-form" action="/login/">
+                <input id="recover-email" type="text" placeholder="Correo registrado" required>
+                <p id="msg-email"></p>
+                <input id="btn-recover" type="submit" value="Enviar" class="btn-recover">
+            </form>
+
+            <div class="recover-links">
+                <p>¿Aún no te has registrado? <a href="/session/registro/">Regístrate aquí</a></p>
+            </div>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer id="footer"></footer>
+
+    <!-- SCRIPT DE RECUPERACIÓN -->
+    <script src="recuperar.js"></script>
+
 </body>
 </html>
