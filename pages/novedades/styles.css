@@ -3,20 +3,16 @@
 /*---------------------------------------------------------------------------------*/
 .nt-box{
   border-radius: 5px;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid yellow;
+  width: 1085px;
 }
 
 .nt-line{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid red;
 }
 
 .nt-main {
-
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -25,7 +21,7 @@
   cursor: pointer;
   margin: 5px;
   width: 50%;
-  border: 1px solid green;
+  transition: transform 0.4s;
 }
 
 .nt-main img {
@@ -51,10 +47,17 @@
 @media (max-width:900px) {
   .nt-box{
     margin: 0;
+    width: 100%;
   }
 
   .nt-line{
     flex-direction: column;
+  }
+
+  .nt-main{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -76,6 +79,7 @@
   padding: 0;
   cursor: pointer;
   width: 100%;
+  transition: background, transform 0.4s;
 }
 
 .nt-new img{
@@ -105,5 +109,18 @@
 }
 
 @media (max-width:900px) {
-  
+  .nt-new{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nt-new img{
+    width: 100%;
+  }
+  .nt-new p{
+    display: none;
+  }
+  .nt-new .nt-title{
+    display: block;
+  }
 }
