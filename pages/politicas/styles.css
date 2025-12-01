@@ -16,7 +16,7 @@
 }
 
 /* Línea decorativa */
-#politicas::before {
+/* #politicas::before {
     content: "";
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@
     background: linear-gradient(90deg, #c84b31, #fc5837, #9a1aee, #28f4ff);
     background-size: 300% 100%;
     animation: move-glow 6s linear infinite;
-}
+} */
 
 @keyframes move-glow {
     0% { background-position: 0% }

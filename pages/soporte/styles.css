@@ -16,7 +16,7 @@
 }
 
 /* Línea decorativa */
-#soporte::before {
+/* #soporte::before {
     content: "";
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@
     background: linear-gradient(90deg, #28f4ff, #c84b31, #9a1aee, #28f4ff);
     background-size: 300% 100%;
     animation: bar-move 6s linear infinite;
-}
+} */
 
 @keyframes bar-move {
     0% { background-position: 0% }
