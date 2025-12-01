@@ -450,3 +450,27 @@
     word-break: break-word;
   }
 }
+/* Corrección FINAL para la sección "Para ti" en móvil */
+@media (max-width: 768px) {
+
+  .pt-slide {
+    flex-direction: column !important; /* Fuerza apilar los juegos */
+    align-items: center;
+    gap: 16px;
+  }
+
+  .pt-juego {
+    width: 100% !important;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .pt-juego img {
+    width: 100% !important;
+    height: auto;
+    display: block;
+  }
+}

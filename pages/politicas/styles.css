@@ -1,0 +1,76 @@
+/* ----------------------------------------------------------- */
+/* ----------- Estilos Gamer para la sección Políticas ------- */
+/* ----------------------------------------------------------- */
+
+#politicas {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 35px;
+    background: linear-gradient(145deg, #0a1124, #0f1a36);
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05), 
+                0 0 35px rgba(200, 75, 49, 0.1);
+    border: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Línea decorativa */
+#politicas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #c84b31, #fc5837, #9a1aee, #28f4ff);
+    background-size: 300% 100%;
+    animation: move-glow 6s linear infinite;
+}
+
+@keyframes move-glow {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+
+/* Encabezado principal */
+#politicas h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #c84b31;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(200,75,49,0.5);
+}
+
+/* Subtítulos */
+#politicas h3 {
+    color: #423ec0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.35rem;
+    border-left: 4px solid #c84b31;
+    padding-left: 10px;
+    text-shadow: 0 0 8px rgba(28, 33, 33, 0.4);
+}
+
+/* Párrafos */
+#politicas p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+/* Resalta correo */
+#politicas p a, #politicas p strong {
+    color: #fc5837;
+}
+
+/* Efecto hover suave */
+#politicas:hover {
+    box-shadow: 0 0 25px rgba(200,75,49,0.25),
+                0 0 10px rgba(0,255,255,0.15);
+    transform: scale(1.01);
+    transition: 0.3s ease;
+}
+

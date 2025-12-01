@@ -1,0 +1,45 @@
+/* ----------------------------------------------------------- */
+/* ----------- Estilos para la sección Acerca de ------------ */
+/* ----------------------------------------------------------- */
+
+#acerca {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: #0c1224;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+#acerca h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c84b31;
+    text-shadow: 0px 0px 12px rgba(200,75,49,0.6);
+}
+
+#acerca p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.gato-img {
+    display: block;
+    margin: 30px auto 0 auto;
+    max-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+    border: 2px solid rgba(200,75,49,0.4);
+    transition: transform 0.3s ease;
+}
+
+.gato-img:hover {
+    transform: scale(1.05);
+}
+.hidden-title {
+    position: absolute;
+    left: -9999px;
+}

@@ -1,0 +1,106 @@
+/* ----------------------------------------------------------- */
+/* ----------- Estilos Gamer para la sección Soporte --------- */
+/* ----------------------------------------------------------- */
+
+#soporte {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 35px;
+    background: linear-gradient(145deg, #0a1124, #0f1a36);
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05), 
+                0 0 35px rgba(200, 75, 49, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Línea decorativa */
+#soporte::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #28f4ff, #c84b31, #9a1aee, #28f4ff);
+    background-size: 300% 100%;
+    animation: bar-move 6s linear infinite;
+}
+
+@keyframes bar-move {
+    0% { background-position: 0% }
+    100% { background-position: 100% }
+}
+
+/* Título principal */
+#soporte h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #28f4ff;
+    text-shadow: 0 0 12px rgba(40,244,255,0.5);
+}
+
+/* Subtítulos */
+#soporte h3 {
+    color: #fc5837;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    border-left: 4px solid #28f4ff;
+    padding-left: 10px;
+    text-shadow: 0 0 8px rgba(252,88,55,0.4);
+}
+
+/* Párrafos */
+#soporte p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    opacity: 0.92;
+}
+
+/* Lista */
+#soporte ul {
+    padding-left: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#soporte ul li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+/* Icono decorativo tipo neón */
+#soporte ul li::before {
+    content: "\f05a"; /* icono info */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #5bb2b7;
+    text-shadow: 0 0 8px rgba(40,244,255,0.6);
+}
+
+/* Enlaces */
+#soporte a {
+    color: #28f4ff;
+    text-decoration: underline;
+}
+
+#soporte a:hover {
+    color: #fc5837;
+}
+
+/* Ligero efecto hover */
+#soporte:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 25px rgba(40,244,255,0.25),
+                0 0 10px rgba(200,75,49,0.15);
+    transition: 0.3s ease;
+}
