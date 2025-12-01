@@ -1,0 +1,97 @@
+/* --------------------------------------------------------------------------- */
+/* ---------------------- ESTILOS RECUPERAR CONTRASEÑA ------------------------ */
+/* --------------------------------------------------------------------------- */
+
+.recover-container {
+    background-color: #0f215a;
+    padding: 25px 30px;
+    width: 90%;
+    max-width: 420px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+    box-sizing: border-box; /* IMPORTANTE PARA QUE EL TAMAÑO SIGA SIENDO EXACTO */
+}
+
+.recover-container h1 {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #F8FAFC;
+}
+
+.recover-container p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #d7e0ec;
+}
+
+/* ------------------------------------ */
+/* INPUT RECUPERACIÓN */
+/* ------------------------------------ */
+.recover-container input[type="text"],
+.recover-container input[type="email"] {
+    width: 100%;
+    height: 38px;
+    border-radius: 6px;
+    border: 2px solid #0f215a;
+    padding: 0 10px;
+    background-color: #e4f0fc;
+    color: #191919;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.recover-container input:focus {
+    outline: none;
+    border-color: #c84b31;
+}
+
+/* ------------------------------------ */
+/* BOTÓN */
+/* ------------------------------------ */
+.recover-container .btn-recover {
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    background-color: #c84b31;
+    color: #F8FAFC;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.recover-container .btn-recover:hover {
+    background-color: #fc5837;
+}
+
+/* ------------------------------------ */
+/* LINKS */
+/* ------------------------------------ */
+.recover-links {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.recover-links a {
+    color: #db6e43;
+    text-decoration: none;
+}
+
+.recover-links a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------ */
+/* RESPONSIVE */
+/* ------------------------------------ */
+@media (max-width: 480px) {
+    .recover-container {
+        padding: 20px;
+        width: 92%;
+    }
+}

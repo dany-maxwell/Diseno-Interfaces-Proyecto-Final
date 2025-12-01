@@ -10,7 +10,7 @@
 .kart-game{
   display: flex;
   justify-content: space-between;
-  background-color: #040B16;
+  background-color: #0f215a;
   margin: 20px 0;
   padding: 10px;
   align-items: center;
@@ -69,7 +69,7 @@
 }
 /*configuracion factura*/
 .pays{
-  background-color: #040B16;
+  background-color: #0f215a;
   border-radius: 4px;
   padding: 10px;
   padding-top: 0;
