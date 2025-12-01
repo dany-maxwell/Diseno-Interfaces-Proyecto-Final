@@ -95,3 +95,171 @@
     object-fit: contain;
   }
 }
+/* ===========================
+   COMUNIDAD / EXPERIENCIAS
+=========================== */
+
+/* Contenedor general */
+.feed{
+  text-align: center;
+  padding: 20px 0 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Caja para crear publicación */
+.post-something{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto 25px;
+  background-color: #040B16;
+  padding: 12px 16px;
+  gap: 16px;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.post-something i{
+  font-size: 40px;
+  color: #ccc;
+}
+
+.post-something .you-post-something{
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
+  width: 60%;
+  background: #0b1627;
+  color: #fff;
+}
+.post-something i#upload{
+  font-size: 30px;
+}
+
+/* ===========================
+        TARJETA (POST)
+=========================== */
+
+.post{
+  background-color: #040B16;
+  border-radius: 12px;
+  margin: 32px auto;
+  padding-bottom: 15px;
+  width: 95%;
+  max-width: 900px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  overflow: hidden;
+}
+
+/* Encabezado (usuario + opciones) */
+.post-head{
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.user-post{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.user-post p{
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ===========================
+        IMAGEN DEL POST
+=========================== */
+.post-img{
+  background-color: #0f1b2a;
+}
+
+.post-img img{
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 8px 8px;
+  display: block;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.post-img:hover img{
+  transform: scale(1.03);
+  filter: brightness(1.08);
+}
+
+/* ===========================
+        REACCIONES
+=========================== */
+
+.feedback{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px 0;
+  font-size: 20px;
+}
+
+.your-feedback{
+  display: flex;
+  gap: 20px;
+  color: #8899a6;
+  font-size: 28px;
+  align-items: center;
+}
+
+.your-feedback i{
+  cursor: pointer;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.your-feedback i:hover{
+  color: #c84a31;
+  transform: scale(1.15);
+}
+
+.your-feedback #unlike{
+  transform: rotate(180deg);
+}
+
+.others-feedback{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.others-feedback p{
+  margin: 0;
+  padding: 8px;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+  .post-img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .post-head{
+    font-size: 20px;
+  }
+
+  .user-post p{
+    font-size: 18px;
+  }
+
+  .your-feedback{
+    font-size: 26px;
+  }
+}
