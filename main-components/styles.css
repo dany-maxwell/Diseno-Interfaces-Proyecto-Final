@@ -21,6 +21,7 @@ main {
   flex: 1;
   box-sizing: border-box;
   align-items: center;
+  padding: 20px;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -30,13 +31,15 @@ header {
   background-color: #09153a;
   position: sticky;
   top: 0;
+  z-index: 100;
+}
+.main-header{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  z-index: 100;
+  width: 100%;
+  gap: 10px;
 }
-
 header a {
   text-decoration: none;
   color: #F8FAFC;
@@ -51,28 +54,22 @@ header a {
   display: none;
   cursor: pointer;
 }
-
+.logo{
+  padding-inline: 20px;
+}
 /*Configuracion pagians de inicio*/
-
 .pages ul {
   display: flex;
   list-style: none;
   gap: 15px;
 }
-.pages li{
+.pages a{
   padding: 6px;
   transition: background 0.3s ease;
 }
-.pages li:hover {
-  background-color: #2750AA;
+.pages a:hover {
+  background-color: #c84b31;
   border-radius: 3px;
-}
-.ahora {
-  background-color: #2750AA;
-  border-radius: 3px;
-}
-.pages .ahora:hover{
-  background-color: #3760b9;
 }
 
 /*Configuracion Header barra de busqueda*/
@@ -173,6 +170,9 @@ header a {
 /*Configuracion Header Responsividad*/
 
 @media (max-width: 900px) {
+  .bt-download{
+    display: none;
+  }
   .menu-icon {
     display: block;
     font-size: 28px;
@@ -190,7 +190,7 @@ header a {
     left: 0;
     top: 64px;
     flex-direction: column;
-    background-color: #1E3F85;
+    background-color: #09153a;
     text-align: left;
     justify-content: top;
     width: auto;
@@ -218,21 +218,37 @@ header a {
 /*---------------------------------------------------------------------------------*/
 footer {
   background-color: #09153a /*#17448C*/;
+  padding-inline: 10px;
+  z-index: 1;
+}
+
+.main-footer{
   display: flex;
   flex-direction: column;
-  padding: 0 40px;
-  z-index: 1;
+  margin: 10px;
 }
 
 .ft-up {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .ft-up a {
   text-decoration: none;
   color: #FDF9F7;
+}
+
+.ft-text{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ft-icons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .ft-bot {
@@ -241,3 +257,13 @@ footer {
   border-top: 1px solid #FDF9F7;
 }
 
+@media (max-width:900px) {
+  .ft-up{
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ft-icons{
+    border-top: 1px solid #FDF9F7;
+  }
+}

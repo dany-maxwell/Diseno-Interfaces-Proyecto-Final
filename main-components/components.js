@@ -31,3 +31,21 @@ fetch("/main-components/footer.html")
     .then(html => {
         document.getElementById("footer").innerHTML = html;
     });
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const btnMenu = document.getElementById("menu-icon");
+  const menu = document.getElementById("menu-lateral");
+  const overlay = document.getElementById("overlay");
+
+  btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("activo");
+    overlay.classList.toggle("activo");
+  });
+
+  overlay.addEventListener("click", () => {
+    menu.classList.remove("activo");
+    overlay.classList.remove("activo");
+  });
+
+});
