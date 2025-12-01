@@ -267,240 +267,186 @@
 .ct-game p{
   margin: 5px;
 }
+/* ============================================================
+  RESPONSIVE (SOLO MÓVILES)
+ ============================================================ */
+@media (max-width: 768px) {
 
-/*---------------------------------------------------------------------------------*/
-/*----------------------------Responsividad Prueba 1-------------------------------*/
-/*---------------------------------------------------------------------------------*/
-/* ========================================================= */
-/*            Tablets y pantallas medianas (1024px)          */
-/* ========================================================= */
-@media (max-width: 1024px){
+  /* ============================================================
+ OFERTAS
+ ============================================================ */
 
-  /* --- Para Ti & Categorías --- */
-  .pt-slides, .ct-slides {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pt-slide, .ct-games {
-    width: 90%;
-    flex-direction: column;
-    margin: 10px auto;
-  }
-
-  .pt-juego img, .ct-games img {
-    width: 100%;
-    height: auto;
-  }
-
-  .pt-text {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* --- Descubrir --- */
-  .ds-1, .ds-2 {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .juego-ds {
-    width: 45%;
-    height: auto;
-  }
-
-  /* --- Ofertas --- */
-  .of-slides {
-    width: 100%;
-  }
-
-  .oferta {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px 0;
-  }
-
-  .oferta img {
-    width: 100%;
-    height: auto;
-  }
-
-  .of-text {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-  }
-}
-
-/* ========================================================= */
-/*                Móviles grandes (768px)                    */
-/* ========================================================= */
-@media (max-width: 768px){
-
-  /* --- General --- */
-  main{
-    max-width: 95%;
-  }
-
-  /* --- Para Ti & Categorías --- */
-  .pt-box, .ct-box {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pt-slide {
-    margin: 10px 0;
-  }
-
-  .ct-games {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .ct-games img {
-    width: 90%;
-    height: auto;
-  }
-
-  /* --- Descubrir --- */
-  .ds-1, .ds-2 {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-  .juego-ds {
-    width: 90%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-
-  /* --- Ofertas --- */
   .of-slides {
     display: flex;
+    width: 100%;
     transition: transform 0.5s ease;
   }
 
   .oferta {
     flex: 0 0 100%;
+    width: 100%;
+    margin: 0;
+    padding: 12px 8px;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 12px;
+    box-sizing: border-box;
   }
 
   .oferta img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
     object-fit: cover;
+    border-radius: 4px;
   }
 
   .of-text {
+    width: 100%;
+    padding: 10px 6px 0 6px;
     text-align: center;
-    padding: 10px;
   }
 
-  /* --- Descubrir --- */
-  .ds-1, .ds-2 {
+
+  /* ============================================================
+   PARA TI
+  ============================================================ */
+
+  .pt-box,
+  .pt-slides {
+    width: 100%;
+  }
+
+  .pt-slides {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     align-items: center;
-    gap: 15px;
+
+    width: 100% !important;
+    transform: none !important;
+  }
+
+  .pt-slide {
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    padding: 8px 12px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .pt-juego {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px;
+
+    background: transparent;
     padding: 0;
+    width: 100%;
+  }
+
+  .pt-juego img {
+    width: 100% !important;
+    max-width: 360px;
+    height: auto !important;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .pt-text {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .pt-text .pt-name {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-align: center;
+    display: block;
+    padding: 6px;
+    background-color: #040B16;
+  }
+
+
+  /* ============================================================
+   DESCUBRE
+  ============================================================ */
+
+  .ds-1,
+  .ds-2 {
+    padding: 0 !important;
+    flex-direction: column !important;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    box-sizing: border-box;
   }
 
   .juego-ds {
-    width: 90%;
-    height: auto;
+    width: 92% !important;
+    max-width: 420px;
+    padding: 0;
+    border: none;
+    background: transparent;
   }
 
   .juego-ds img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-}
-
-/* ========================================================= */
-/*                     Móviles pequeños (480px)              */
-/* ========================================================= */
-@media (max-width: 480px){
-
-  /* --- General --- */
-  h2 {
-    font-size: 18px;
-    text-align: center;
+    border-radius: 6px;
+    transition: transform .18s ease, box-shadow .18s ease;
+    display: block;
   }
 
-  .bt {
-    font-size: 22px;
+  .juego-ds:hover img,
+  .juego-ds:focus img {
+    transform: scale(1.04);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   }
 
-  /* --- Para Ti --- */
-  .pt-text .pt-precio {
-    padding: 6px;
-    font-size: 13px;
-  }
 
-  .pt-text p {
-    font-size: 13px;
-  }
+  /* ============================================================
+   CATEGORÍAS
+  ============================================================ */
 
-  /* --- Categorías --- */
-  .ct-name {
-    font-size: 14px;
-  }
-
-  .mas, .mas2 {
-    font-size: 12px;
-    padding: 3px;
-  }
-
-  .ct-games img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* --- Ofertas --- */
-  .oferta {
+  .ct-main {
+    flex-wrap: wrap !important;
     gap: 10px;
   }
 
-  .of-text .bt-precio {
-    padding: 6px;
-    font-size: 13px;
+  .ct-games,
+  .ct-slides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .ct-game {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .ct-game img {
+    width: 100%;
+    height: auto;
+  }
+
+  .ct-game p {
+    margin: 8px 0 0 0;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }
-
-/* ========================================================= */
-/*                        Hover global                        */
-/* ========================================================= */
-.juego-ds img:hover {
-  transform: scale(1.05);
-}
-
-/* Ajustes generales para juego-ds */
-.juego-ds {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.juego-ds img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
