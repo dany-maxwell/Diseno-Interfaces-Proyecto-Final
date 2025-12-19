@@ -1,6 +1,6 @@
 const formRegistro = document.getElementById("register-form");
-const password = document.getElementById("password");
-const confirmPassword = document.getElementById("con_password");
+const password = document.getElementById("rg-password");
+const confirmPassword = document.getElementById("rg-con-password");
 const mensaje = document.getElementById("ms-pass");
 
 confirmPassword.addEventListener("input", function () {
@@ -34,11 +34,11 @@ formRegistro.addEventListener("submit", function(e) {
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
     const nuevoUsuario = {
-        usuario: document.getElementById("user").value,
-        correo: document.getElementById("mail").value,
-        contraseña: document.getElementById("password").value,
-        fecha_nac: document.getElementById("fecha_nac").value,
-        pais: document.getElementById("pais").value
+        usuario: document.getElementById("rg-user").value,
+        correo: document.getElementById("rg-mail").value,
+        contraseña: document.getElementById("rg-password").value,
+        fecha_nac: document.getElementById("rg-fecha_nac").value,
+        pais: document.getElementById("rg-country").value
     }
 
     const existe = usuarios.some(u => u.mail === mail);

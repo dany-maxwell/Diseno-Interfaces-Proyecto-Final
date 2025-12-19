@@ -3,8 +3,8 @@ const formLogin = document.getElementById("login-form");
 formLogin.addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const usuarioIngresado = document.getElementById("user").value;
-    const passwordImgresado = document.getElementById("password").value;
+    const usuarioIngresado = document.getElementById("lg-user").value;
+    const passwordImgresado = document.getElementById("lg-password").value;
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     const msg = document.getElementById("msg-log");
 

@@ -2,50 +2,66 @@ fetch("/main-components/header.html")
     .then(res => res.text())
     .then(html => {
         document.getElementById("header").innerHTML = html;
-
         const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
 
-        const noLogueado = document.querySelector(".no-logueado");
-        const logueado = document.querySelector(".logueado");
-        
-        const btnLogout = document.getElementById("btnLogout");
+        const user_log = document.querySelector(".user");
+        const user_Nlog = document.querySelector(".login");
+        const btnLogout = document.getElementById("logout");
 
         if (usuarioActivo) {
-            noLogueado.style.display = "none";
-            logueado.style.display = "flex";
-            
+            user_log.style.display = "flex";
+            user_Nlog.style.display = "none";
 
             btnLogout.addEventListener("click", () => {
                 localStorage.removeItem("usuarioActivo");
                 window.location.href = "/pages/tienda/";
             });
-
         } else {
-            noLogueado.style.display = "flex";
-            logueado.style.display = "none";
+            user_log.style.display = "none";
+            user_Nlog.style.display = "flex";
+            const login = document.getElementById("login");
+            login.addEventListener("click", () => {
+                window.location.href = "/session/login/"
+            })
         }
+
+        const menu = document.getElementById("menu");
+        const bar = document.getElementById("bar");
+        menu.addEventListener("click", () => {
+            bar.classList.toggle("activo")
+        });
+
+        const logo = document.getElementById("logo");
+        logo.addEventListener("click", () => {
+            window.location.href = "/pages/tienda/";
+        });
+
+        const tienda = document.getElementById("tienda");
+        tienda.addEventListener("click", () => {
+            window.location.href = "/pages/tienda/";
+        });
+
+        const novedades = document.getElementById("novedades");
+        novedades.addEventListener("click", () => {
+            window.location.href = "/pages/novedades/";
+        });
+
+        const comunidad = document.getElementById("comunidad");
+        comunidad.addEventListener("click", () => {
+            window.location.href = "/pages/comunidad/";
+        });
+
+        const user = document.getElementById("user");
+        const options = document.getElementById("options");
+        let u_checked = false;
+        user.addEventListener("click", () => {
+            options.classList.toggle("activo");
+        });
     });
 
 fetch("/main-components/footer.html")
     .then(res => res.text())
     .then(html => {
         document.getElementById("footer").innerHTML = html;
-    });
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const btnMenu = document.getElementById("menu-icon");
-  const menu = document.getElementById("menu-lateral");
-  const overlay = document.getElementById("overlay");
-
-  btnMenu.addEventListener("click", () => {
-    menu.classList.toggle("activo");
-    overlay.classList.toggle("activo");
-  });
-
-  overlay.addEventListener("click", () => {
-    menu.classList.remove("activo");
-    overlay.classList.remove("activo");
-  });
-
-});
+    }
+    );

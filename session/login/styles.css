@@ -6,25 +6,25 @@
     height: auto;
 }
 
-.login {
+.card-login {
     display: flex;
     flex-direction: column;
     padding: 20px;
     gap: 0;
 }
 
-.login .in-login {
+.card-login .in-login {
     margin-bottom: 0px;
     height: 30px;
     border: 2px solid #0f215a;
     border-radius: 5px;
     cursor: pointer;
 }
-.login .in-login:hover{
+.card-login .in-login:hover{
     background-color: #cce3f8;
 }
 
-.login label {
+.card-login label {
     cursor: pointer;
     margin-top: 20px;
 }

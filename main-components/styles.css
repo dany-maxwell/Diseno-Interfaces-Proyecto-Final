@@ -1,7 +1,8 @@
 /*---------------------------------------------------------------------------------*/
 /*------------------------------Configuracion General------------------------------*/
 /*---------------------------------------------------------------------------------*/
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -13,6 +14,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #F8FAFC;
   margin: 0;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
@@ -28,185 +30,159 @@ main {
 /*------------------------------Configuracion Header-------------------------------*/
 /*---------------------------------------------------------------------------------*/
 header {
+  display: flex;
+  justify-content: center;
   background-color: #09153a;
+  gap: 10px;
   position: sticky;
   top: 0;
   z-index: 100;
 }
-.main-header{
+
+.icon {
+  border: none;
+  background-color: transparent;
+  color: #F8FAFC;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.logo {
+  border: none;
+  background-color: transparent;
+  color: #F8FAFC;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+.pages {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   gap: 10px;
 }
-header a {
-  text-decoration: none;
-  color: #F8FAFC;
-}
 
-/*Configuracion menu oculto para responsividad*/
-#menu-toggle {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-.logo{
-  padding-inline: 20px;
-}
-/*Configuracion pagians de inicio*/
-.pages ul {
-  display: flex;
-  list-style: none;
-  gap: 15px;
-}
-.pages a{
-  padding: 6px;
-  transition: background 0.3s ease;
-}
-.pages a:hover {
-  background-color: #c84b31;
-  border-radius: 3px;
-}
-
-/*Configuracion Header barra de busqueda*/
-.buscar form input {
-  border: none;
-  background-color: #F8FAFC;
-  width: 300px;
-  height: 30px;
-  border-radius: 10px;
-  padding: 0 20px;
-}
-
-/*Configuracion Header botones descarga y usuario*/
-.buttons {
-  align-items: center;
-  display: flex;
-  gap: 20px;
-}
-
-/*Configuracion Header usuario*/
-#user-toogle {
-  display: none;
-}
-
-.user-icon {
-  font-size: 28px;
-  cursor: pointer;
-}
-
-.button-us {
-  position: relative;
-  display: inline-block;
-}
-.user-options {
-  visibility: hidden;
-  position: absolute;
-  top: 130%;
-  right: 0;
-  width: 180px;
-  height: 0;
-  background-color: #1F2228;
-  z-index: 10;
-  overflow: hidden;
-}
-.user-options ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.page {
   width: 100%;
-}
-.user-options li{
-  padding: 10px;
-  transition: background 0.3s ease;
-}
-.user-options li.logout{
-  background-color: #f56346;
-}
-
-.user-options li:hover{
-  background-color: #F8FAFC;
-}
-.user-options li:hover a{
-  color: #191919;
-}
-.user-options li.logout:hover a{
-  color: #f56346;
-}
-
-#user-toogle:checked+.user-icon+.user-options {
-  visibility: visible;
-  height: auto;
-  transition: height 0.3s ease;
-}
-
-/*Configuracion Header boton descargar*/
-.bt-download {
-  font-size: 28px;
   border: none;
-  background-color: #09153a;
-  color: #FDF9F7;
-  cursor: pointer;
-}
-
-.bt-login{
-  border: none;
-  height: 26px;
-  width: 100px;
-  border-radius: 3px;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: transparent;
   color: #F8FAFC;
-  background-color: #c84b31;
+  font-size: 17px;
+  transition: background 0.5s ease;
   cursor: pointer;
 }
 
-.bt-login:hover{
-  background-color: #fc5837;
+.page:hover {
+  background-color: #c84b31;
 }
 
-/*Configuracion Header Responsividad*/
+.page.active {
+  background-color: aqua;
+}
+
+.buscar {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding-inline: 10px;
+}
+
+.buttons{
+  display: flex;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 170px;
+  max-height: 0;
+  background-color: #00040e;
+  top: 67px;
+  right: 0px;
+  overflow: hidden;
+  transition: max-height 0.50s ease;
+}
+.options.activo{
+  max-height: 300px;
+}
+
+.opt{
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 7px;
+  background-color: transparent;
+  color: #F8FAFC;
+  font-size: 17px;
+  transition: background 0.5s ease;
+  cursor: pointer;
+}
+.opt:hover{
+  background-color: #c84b31;
+}
+
+.logout{
+  background-color: #c84b31;
+}
+.logout:hover{
+  background-color: #F8FAFC;
+  color: #c84b31;
+}
+.login {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #c84b31;
+  color: #F8FAFC;
+  white-space: nowrap;
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
-  .bt-download{
-    display: none;
+  header{
+    width: 100%;
+    justify-content: space-around;
   }
-  .menu-icon {
+  .menu {
     display: block;
-    font-size: 28px;
   }
-  @keyframes left-right{
-    from{
-      left: -100%;
-    }
-    to{
-      left: 0;
-    }
-  }
-  .pages ul {
-    position: fixed;
-    left: 0;
-    top: 64px;
-    flex-direction: column;
+  .bar {
+    position: absolute;
     background-color: #09153a;
-    text-align: left;
-    justify-content: top;
-    width: auto;
-    visibility: hidden;
-    padding: 20px;
-    height: 100%;
-    overflow: hidden;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: initial;
+    top: 67px;
+    right: 0;
+    width: 200px;
+    height: 100rex;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
   }
-
-  .buscar {
-    display: none;
+  .bar.activo{
+    transform: translateX(0);
   }
-
-  #menu-toggle:checked+.menu-icon+.logo+.pages ul {
-    visibility: visible;
-    animation: left-right 0.4s;
+  .pages{
+    width: 100%;
+    flex-direction: column;
+  }
+  .options{
+    position: relative;
+    top: 0px;
+    border-radius: 4px;
   }
 }
 
@@ -217,12 +193,14 @@ header a {
 /*-------------------------------Configuracion Footer------------------------------*/
 /*---------------------------------------------------------------------------------*/
 footer {
-  background-color: #09153a /*#17448C*/;
+  background-color: #09153a
+    /*#17448C*/
+  ;
   padding-inline: 10px;
   z-index: 1;
 }
 
-.main-footer{
+.main-footer {
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -239,13 +217,13 @@ footer {
   color: #FDF9F7;
 }
 
-.ft-text{
+.ft-text {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-.ft-icons{
+.ft-icons {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -258,12 +236,12 @@ footer {
 }
 
 @media (max-width:900px) {
-  .ft-up{
+  .ft-up {
     flex-direction: column;
     gap: 0;
   }
 
-  .ft-icons{
+  .ft-icons {
     border-top: 1px solid #FDF9F7;
   }
 }
