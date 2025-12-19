@@ -14,15 +14,10 @@ fetch("/main-components/header.html")
 
             btnLogout.addEventListener("click", () => {
                 localStorage.removeItem("usuarioActivo");
-                window.location.href = "/pages/tienda/";
             });
         } else {
             user_log.style.display = "none";
             user_Nlog.style.display = "flex";
-            const login = document.getElementById("login");
-            login.addEventListener("click", () => {
-                window.location.href = "/session/login/"
-            })
         }
 
         const menu = document.getElementById("menu");
@@ -31,29 +26,8 @@ fetch("/main-components/header.html")
             bar.classList.toggle("activo")
         });
 
-        const logo = document.getElementById("logo");
-        logo.addEventListener("click", () => {
-            window.location.href = "/pages/tienda/";
-        });
-
-        const tienda = document.getElementById("tienda");
-        tienda.addEventListener("click", () => {
-            window.location.href = "/pages/tienda/";
-        });
-
-        const novedades = document.getElementById("novedades");
-        novedades.addEventListener("click", () => {
-            window.location.href = "/pages/novedades/";
-        });
-
-        const comunidad = document.getElementById("comunidad");
-        comunidad.addEventListener("click", () => {
-            window.location.href = "/pages/comunidad/";
-        });
-
         const user = document.getElementById("user");
         const options = document.getElementById("options");
-        let u_checked = false;
         user.addEventListener("click", () => {
             options.classList.toggle("activo");
         });

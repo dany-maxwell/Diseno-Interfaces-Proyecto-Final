@@ -79,6 +79,7 @@ header {
   background-color: transparent;
   color: #F8FAFC;
   font-size: 17px;
+  text-decoration: none;
   transition: background 0.5s ease;
   cursor: pointer;
 }
@@ -101,6 +102,7 @@ header {
 
 .buttons{
   display: flex;
+  gap: 5px;
 }
 
 .options{
@@ -127,6 +129,7 @@ header {
   background-color: transparent;
   color: #F8FAFC;
   font-size: 17px;
+  text-decoration: none;
   transition: background 0.5s ease;
   cursor: pointer;
 }
@@ -149,6 +152,7 @@ header {
   color: #F8FAFC;
   white-space: nowrap;
   cursor: pointer;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -178,6 +182,7 @@ header {
   .pages{
     width: 100%;
     flex-direction: column;
+    text-align: center;
   }
   .options{
     position: relative;
