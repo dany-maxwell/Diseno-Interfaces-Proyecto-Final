@@ -41,7 +41,7 @@ formRegistro.addEventListener("submit", function(e) {
         pais: document.getElementById("rg-country").value
     }
 
-    const existe = usuarios.some(u => u.mail === mail);
+    const existe = usuarios.some(u => u.correo === document.getElementById("rg-mail"));
 
     if (existe) {
         alert("Este correo ya está registrado ❌");

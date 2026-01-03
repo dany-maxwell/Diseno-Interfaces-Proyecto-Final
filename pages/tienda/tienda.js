@@ -143,13 +143,3 @@ ct_botones.forEach(boton => {
     });
 });
 document.querySelector('[data-category="accion"]').click();
-
-//-------------------------------------------------------------------//
-//----------------------------Links Juegos---------------------------//
-//-------------------------------------------------------------------//
-
-const linkJuego = document.getElementById("Juego1");
-
-linkJuego.addEventListener("click", () => {
-    window.location.href = "/pages/tienda/battelfield-6"
-} )

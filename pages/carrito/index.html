@@ -9,102 +9,34 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="/main-components/components.js"></script>
+    <script src="carrito.js" defer></script>
 </head>
 
 <body>
     <header id="header"></header>
     <main>
-        <section class="compras">
-            <h2>Tu carrito de compras</h2>
-            <div class="main-kart">
-                <div class="kart">
-                    <div class="kart-game">
-                        <div class="game-k">
-                            <img src="/images/juegos/sekiro.jpg" alt="">
-                            <div class="d-game-k">
-                                <p>Sekiro</p>
-                                <i class="fa-brands fa-microsoft"></i>
-                            </div>
-                        </div>
-                        <div class="precio-k">
-                            <div class="precio-j">
-                                <p><span class="discount">-50%</span>$29.99</p>
-                            </div>
-                            <div class="remove">
-                                <button class="bt-remove">Eliminar del carro</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="kart-game">
-                        <div class="game-k">
-                            <img src="/images/juegos/dont-sarve-thogether.jpg" alt="">
-                            <div class="d-game-k">
-                                <p>Don't Starve Thogether</p>
-                                <p><i class="fa-brands fa-microsoft"></i> <i class="fa-brands fa-linux"></i></p>
-                            </div>
-                        </div>
-                        <div class="precio-k">
-                            <div class="precio-j">
-                                <p><span class="discount">-20%</span>$15.99</p>
-                            </div>
-                            <div class="remove">
-                                <button class="bt-remove">Eliminar del carro</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="kart-game">
-                        <div class="game-k">
-                            <img src="/images/juegos/battelfield-6.jpg" alt="">
-                            <div class="d-game-k">
-                                <p>Battelfield 6</p>
-                                <p><i class="fa-brands fa-microsoft"></i></p>
-                            </div>
-                        </div>
-                        <div class="precio-k">
-                            <div class="precio-j">
-                                <p><span class="discount">-20%</span>$56.00</p>
-                            </div>
-                            <div class="remove">
-                                <button class="bt-remove">Eliminar del carro</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="kart-buttons">
-                        <a href="/tienda/"><button class="go-shop">Seguir comprando</button></a>
-                        <button class="go-pay">Avanzar a pagar</button>
-                    </div>
+        <section class="main-kart">
+            <div class="kart-e" id="kart-e">
+                <p>El carrito esta vacio</p>
+                <a class="btn-tienda" href="/pages/tienda/">Explorar Tienda</a>
+            </div>
+            <div class="kart" id="kart">
+                
+            </div>
+            <div class="pre-bill" id="pre-bill">
+                <h2>Resumen</h2>
+                <div class="bill-list" id="bill-list">
+                    
                 </div>
-                <div class="pays">
-                    <div class="pays-head">
-                        <h3>Carrito</h3>
-                        <p id="tax">El impuesto sobre las ventas se calculará durante el proceso de pago cuando
-                            corresponda.</p>
-                        <div class="game-p">
-                            <p>Sekiro</p>
-                            <p>$29.99</p>
-                        </div>
-                        <div class="game-p">
-                            <p>Don't Starve Thogether</p>
-                            <p>$15.99</p>
-                        </div>
-                        <div class="game-p">
-                            <p>Battelfield 6</p>
-                            <p>$56.00</p>
-                        </div>
-                    </div>
-                    <div class="pays-foot">
-                        <div class="total-p">
-                            <p>Precio Total Aproximado</p>
-                            <p>$101.98</p>
-                        </div>
-                        <button class="go-pay-2">Avanzar a pagar</button>
-                    </div>
+                <div class="bill-total">
+                    <h3>Total: </h3>
                 </div>
+                <button class="btn-pago" id="btn-pago">Avanzar a Pagar</button>
             </div>
         </section>
     </main>
     <footer id="footer"></footer>
-    
+
 </body>
 
 </html>

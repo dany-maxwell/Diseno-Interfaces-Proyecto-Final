@@ -29,6 +29,7 @@
   margin: 20px;
   cursor: pointer;
   transition: transform 0.5s;
+  text-decoration: none;
 }
 
 .oferta:hover{
