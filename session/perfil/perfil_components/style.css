@@ -1,0 +1,78 @@
+.card {
+    background-color: #0f215a;
+    border-radius: 5px;
+    padding: 20px;
+    width: 89%;
+    height: auto;
+    margin: auto;
+}
+
+/* FORMULARIO */
+.register {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 0;
+}
+
+/* INPUTS */
+.register .in-register {
+    margin: 0px;
+    height: 30px;
+    border: 2px solid #0f215a;
+    background-color: #F8FAFC;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+/* File input (imagen) */
+.register input[type="file"].in-register {
+    padding: 5px;
+    height: auto;
+}
+
+/* Hover inputs */
+.register .in-register:hover {
+    background-color: #cce3f8;
+}
+
+/* Labels */
+.register label {
+    cursor: pointer;
+    margin-top: 15px;
+    color: #F8FAFC;
+}
+
+/* Título */
+.register h2 {
+    color: #F8FAFC;
+    margin-bottom: 10px;
+}
+
+/* Imagen de perfil */
+#preview-img {
+    border-radius: 50%;
+    border: 3px solid #F8FAFC;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+/* Botón */
+#registrar {
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #c84b31;
+    color: #F8FAFC;
+    font-weight: bold;
+}
+
+#registrar:hover {
+    background-color: #fc5837;
+}

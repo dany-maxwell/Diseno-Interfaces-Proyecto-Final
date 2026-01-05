@@ -4,22 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/main-components/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header id="header"></header>
-    <div id="contenido">
-        <h1>Perfil de Usuario</h1>
-        <div class="contenido">
-            <h2>Nombre del Usuario</h2>
-        <label for="nombre"></label>
-        <div id="compras">
-            
+    <main>
+   <section class="perfil">
+
+    <!-- ENCABEZADO -->
+    <header id="perfil-header">
+
+        <figure id="perfil-foto">
+            <img id="perfil-foto-img" src="img/usuario.png" alt="Foto de perfil">
+        </figure>
+
+        <div id="perfil-info-basica">
+            <h1 id="perfil-nombre"></h1>
+            <p id="perfil-usuario"></p>
+            <p id="perfil-descripcion">
+                Bienvenido a tu perfil
+            </p>
         </div>
-        </div>
-    </div>
+
+    </header>
+
+    <!-- DATOS GENERALES -->
+    <section id="perfil-datos">
+        <h2>Información</h2>
+        <ul>
+            <li><strong>Email:</strong> <span id="perfil-email"></span></li>
+            <li><strong>País:</strong> <span id="perfil-pais"></span></li>
+            <li><strong>Fecha de nacimiento:</strong> <span id="perfil-fecha"></span></li>
+        </ul>
+    </section>
+
+    <!-- ACCIONES -->
+    <section id="perfil-acciones">
+        <button class="btn-editar">Editar perfil</button>
+        <button id="btn-cerrar-sesion" class="btn-cerrar-sesion">Cerrar sesión</button>
+    </section>
+
+</section>
+
+</main>
     <footer id="footer"></footer>
     <script src="/main-components/components.js"></script>
+    <script src="perfil.js"></script>
 </body>
 </html>
