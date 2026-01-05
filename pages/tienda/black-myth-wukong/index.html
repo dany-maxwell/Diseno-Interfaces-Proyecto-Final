@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battelfield 6</title>
+    <link rel="stylesheet" href="/main-components/styles.css">
+    <link rel="stylesheet" href="/pages/tienda/game-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h2>Black Myth Wukong</h2>
+        <div class="game-box">
+            <div class="game-src">
+                <div class="game-main activo" data-category="src1">
+                    <video src="resources/video1.mp4" width="100%" controls>
+                    </video>
+                </div>
+                <div class="game-main" data-category="src2">
+                    <img src="resources/captura1.jpg" alt="">
+                </div>
+                <div class="game-main" data-category="src3">
+                    <img src="resources/captura2.jpg" alt="">
+                </div>
+                <div class="game-main" data-category="src4">
+                    <img src="resources/captura3.jpg" alt="">
+                </div>
+                <div class="game-main" data-category="src5">
+                    <img src="resources/captura4.jpg" alt="">
+                </div>
+                <div class="game-gallery">
+                    <div class="gl-contanier">
+                        <div class="gl-list" id="gl">
+                            <button class="gl-item" data-category="src1" id="inicio">
+                                <img class="df" src="resources/captura-video.jpg">
+                            </button>
+                            <button class="gl-item" data-category="src2">
+                                <img src="resources/captura1.jpg">
+                            </button>
+                            <button class="gl-item" data-category="src3">
+                                <img src="resources/captura2.jpg">
+                            </button>
+                            <button class="gl-item" data-category="src4">
+                                <img src="resources/captura3.jpg">
+                            </button>
+                            <button class="gl-item" data-category="src5">
+                                <img src="resources/captura4.jpg">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="/images/juegos/black-myth-wukong.jpg">
+                <p>Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.</p>
+                <label><strong>$40</strong></label>
+                <button class="btn-cart" id="bt-carrito" data-id="2" data-name="Black Myth Wukong" data-price="40"
+                    data-img="/images/juegos/black-myth-wukong.jpg">Añadir al Carro</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+
+    <script src="/main-components/components.js"></script>
+    <script src="/pages/tienda/game-jva.js"></script>
+</body>
+
+</html>

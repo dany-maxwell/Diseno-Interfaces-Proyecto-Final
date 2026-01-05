@@ -63,5 +63,6 @@
 #library-c{
     width: 1215px;
     gap: 5px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }

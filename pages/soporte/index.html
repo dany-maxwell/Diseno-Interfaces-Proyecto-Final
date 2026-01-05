@@ -1,58 +1,101 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LazzyCatt</title>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/main-components/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="/main-components/components.js"></script>
 </head>
 
 <body>
-    <!--Cabecera-->
     <header id="header"></header>
     <main>
-        <!--Texto de soporte-->
-        <section id="soporte">
-            <h2>Soporte</h2>
+        <section class="min-h-screen flex items-center justify-center bg-black px-4 py-10">
+            <div class="max-w-4xl w-full bg-gradient-to-br from-[#0b132b] to-[#1c2541]
+           rounded-2xl p-8 shadow-2xl text-white">
 
-            <p>
-                ¿Tienes algún problema con tu compra o necesitas ayuda con tu cuenta?
-                En <strong>LazyCattGames</strong> estamos aquí para ayudarte.
-            </p>
+                <!-- Título -->
+                <h2 class="text-center text-4xl font-bold text-cyan-400 mb-6 drop-shadow-lg">
+                    Soporte
+                </h2>
 
-            <h3>Opciones de contacto</h3>
-            <ul>
-                <li>
-                    Escríbenos a:
-                    <a href="mailto:soporte@lazycattgames.com"><strong>soporte@lazycattgames.com</strong></a>
-                </li>
-                <li>
-                    Envíanos un mensaje directo desde la sección de contacto.
-                </li>
-                <li>
-                    Horario de atención: Lunes a Viernes, de 9:00 a 18:00 (GMT-5)
-                </li>
-            </ul>
+                <!-- Intro -->
+                <p class="text-gray-200 mb-8">
+                    ¿Tienes algún problema con tu compra o necesitas ayuda con tu cuenta?
+                    En <span class="font-semibold">LazyCattGames</span> estamos aquí para ayudarte.
+                </p>
 
-            <h3>Preguntas frecuentes</h3>
-            <p>
-                Antes de contactarnos, te recomendamos revisar nuestras
-                <a href="/politicas/index.html">Políticas de la Tienda</a>, donde encontrarás información
-                sobre reembolsos, entregas y seguridad de tu cuenta.
-            </p>
+                <!-- Opciones de contacto -->
+                <div class="mb-8">
+                    <h3 class="text-orange-400 text-xl font-semibold mb-4 border-l-4 border-cyan-400 pl-3">
+                        Opciones de contacto
+                    </h3>
 
-            <p>
-                Si tu problema persiste, no dudes en escribirnos.
-                Nuestro equipo responderá lo más pronto posible 😸🎮
-            </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-cyan-500 text-black text-sm font-bold">
+                                i
+                            </span>
+                            <span>
+                                Escríbenos a:
+                                <a href="mailto:soporte@lazycattgames.com" class="text-cyan-400 hover:underline">
+                                    soporte@lazycattgames.com
+                                </a>
+                            </span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-cyan-500 text-black text-sm font-bold">
+                                i
+                            </span>
+                            <span>
+                                Envíanos un mensaje directo desde la sección de contacto.
+                            </span>
+                        </li>
+
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="w-6 h-6 flex items-center justify-center rounded-full bg-cyan-500 text-black text-sm font-bold">
+                                i
+                            </span>
+                            <span>
+                                Horario de atención: Lunes a Viernes, de 9:00 a 18:00 (GMT-5)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Preguntas frecuentes -->
+                <div>
+                    <h3 class="text-orange-400 text-xl font-semibold mb-4 border-l-4 border-cyan-400 pl-3">
+                        Preguntas frecuentes
+                    </h3>
+
+                    <p class="text-gray-200 mb-4">
+                        Antes de contactarnos, te recomendamos revisar nuestras
+                        <a href="#" class="text-cyan-400 hover:underline">
+                            Políticas de la Tienda
+                        </a>,
+                        donde encontrarás información sobre reembolsos, entregas y seguridad de tu cuenta.
+                    </p>
+
+                    <p class="font-semibold">
+                        Si tu problema persiste, no dudes en escribirnos.
+                        Nuestro equipo responderá lo más pronto posible 🐱🎮
+                    </p>
+                </div>
+
+            </div>
         </section>
 
     </main>
     <footer id="footer"></footer>
+    <script src="/main-components/components.js"></script>
 </body>
 
 </html>
